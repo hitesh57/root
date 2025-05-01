@@ -1,0 +1,2965 @@
+// Max width 575px //
+@media only screen and (max-width:575px) {
+}
+// Min width 576px to Max width 767px //
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+}
+// Max width 767px //
+@media only screen and (max-width: 767px) {
+    .mb-sm-10{
+        margin-bottom: 10px;
+    }
+    .mb-sm-15{
+        margin-bottom: 15px;
+    }
+    .mb-sm-20{
+        margin-bottom: 20px;
+    }
+    .fs-xx-14{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .tb-btn{
+        font-size: 14px;
+    }
+    .pt-90{
+        padding-top: 30px;
+    }
+    .pt-95{
+        padding-top: 35px;
+    }
+    .pt-110,
+    .pt-120{
+        padding-top: 60px;
+    }
+    .pb-90{
+        padding-bottom: 30px;
+    }
+    .pb-95{
+        padding-bottom: 35px;
+    }
+    .pb-120{
+        padding-bottom: 60px;
+    }
+    .ptb-120{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .mb-120{
+        margin-bottom: 60px;
+    }
+    .h-60{
+        height: 54px;
+    }
+    .link{
+        font-size: 14px;
+        i{
+            font-size: 14px;
+        }
+    }
+    .fs-15{
+        font-size: 14px;
+    }
+    .fs-22{
+        font-size: 20px;
+    }
+    .fs-24{
+        font-size: 22px;
+    }
+    .fs-36{
+        font-size: 28px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 12px 21px 12px;
+        span{
+            padding-right: 25px;
+            .icon-left{
+                top: 6px;
+                max-width: 16px;
+            }
+        }
+        .icon-right{
+            right: 58px;
+            top: 18px;
+            max-width: 16px;
+        }
+        &:hover{
+            .icon-right{
+                right: 13px;
+            }
+            &:before{
+                width: 40px;
+            }
+        }
+    }
+    .btn-wrap{
+        .google-ratings{
+            margin-left: 10px;
+        }
+    }
+    .google-ratings{
+        padding-left: 50px;
+        img{
+            left: 0;
+            max-width: 40px;
+        }
+        h6{
+            margin-bottom: 0;
+        }
+    }
+    .section-subtitle{
+        font-size: 14px;
+        padding: 0 14px;
+        margin-bottom: 10px;
+        &:before,
+        &:after{
+            top: 4px;
+            width: 7px;
+            height: 7px;
+        }
+    }
+    .section-title{
+        font-size: 26px;
+        line-height: 35px;    
+        &.mb-35,
+        &.mb-45{
+            margin-bottom: 30px;
+        }
+    }
+    .breadcrumb-area{
+        .breadcrumb-wrap{
+            margin: 0 10px;
+            padding: 70px 0 72px;
+            .br-shape-one{
+                bottom: 25px;
+                left: 20px;
+                max-width: 35px;
+            }
+            .br-shape-two{
+                top: 30px;
+                right: 20px;
+                max-width: 35px;
+            }
+            .section-title{
+                margin-bottom: 6px;
+            }
+        }
+    }
+    .slider-btn{
+        .prev-btn,    
+        .next-btn{
+            width: 40px;
+            height: 40px;
+            i{
+                font-size: 20px;
+            }
+        }
+        &.style-one,
+        &.style-two{
+            .prev-btn,    
+            .next-btn{
+                i{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    .sidebar{
+        .sidebar-widget{
+            padding: 24px 20px;
+            &.style-two{
+                padding: 24px 20px;
+            }
+        }
+    }
+    //Hero CSS 
+    .hero-area{
+        &.style-one{
+            .hero-slider-one{
+                .slider-btn{
+                    .prev-btn,
+                    .next-btn{
+                        i{
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+            .hero-slide-item{
+                padding:80px 0 120px;
+                .hero-content{
+                    h1{
+                        font-size: 28px;
+                        line-height: 38px;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
+            .search-directory-wrap{
+                width: 100%;
+                .search-directory-form {
+                    .form-group {
+                        width: 100%;
+                        margin: 0 0 20px;
+                    }
+                    button{
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        &.style-two{
+            margin: -60px 0 30px;
+            padding:100px 0 300px;
+            .hero-bg-bottom{
+                background-position: top center;
+            }
+            .hero-content{
+                h1{
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                .search-directory-wrap{
+                    width: 100%;
+                    .search-directory-form {
+                        .form-group {
+                            width: 100%;
+                            margin: 0 0 20px;
+                        }
+                        button{
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+            .hero-scroling-text{
+                ul{
+                    li{
+                        font-size: 24px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+        &.style-three{
+            padding: 120px 0 10px;
+            .hero-img-one{
+                top: 30px;
+            }
+            .hero-img-one,
+            .hero-img-two{
+                max-width: 90px;
+            }
+            .hero-img-two{
+                top: auto;
+                bottom: 30%;
+            }
+            .hero-content{
+                h1{
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+                p{
+                    padding: 0 10px;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                .btn-wrap{
+                    margin-bottom: 60px;
+                    .btn{
+                        margin-top: 10px;
+                        margin-right: 10px;
+                    }
+                    .play-video{
+                        margin-top: 10px;
+                        .play-icon{
+                            width: 48px;
+                            height: 48px;
+                            margin-right: 8px;
+                            i{
+                                font-size: 27px;
+                            }
+                        }
+                        span{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .search-directory-wrap{
+                width: 100%;
+                .search-directory-form {
+                    .form-group {
+                        width: 100%;
+                        margin: 0 0 20px;
+                    }
+                    button{
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    //Directory Card CSS 
+    .directory-card{
+        &.style-one{
+            padding: 25px 20px;
+            .directory-img{
+                width: 100%;
+            }
+            .directory-info{
+                width: 100%;
+                margin: 22px 0 0;
+                h2{
+                    font-size: 40px;
+                }
+                h3{
+                    margin-bottom: 10px;
+                    line-height: 29px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-bottom: 15px;
+                }
+                a{
+                    font-size: 14px;
+                }
+            }
+        }
+        &.style-two,
+        &.style-three{
+            padding: 25px 20px 25px;
+            .directory-info{
+                width: 100%;
+                margin: 20px 0 0;
+            }
+        }
+    }
+    //Category CSS 
+    .category-card{
+        &.style-one{
+            padding: 28px 22px;
+            .cat-icon{
+                width: 80px;
+                height: 80px;
+                margin-bottom: 26px;
+                i{
+                    font-size: 38px;
+                }
+            }
+        }
+        &.style-three{
+            padding: 20px;
+            .cat-icon{
+                width: 80px;
+                height: 80px;
+                i{
+                    font-size: 40px;
+                }
+            }
+            .cat-info{
+                width: calc(100% - 100px);
+            }
+        }
+        &.style-four{
+            padding: 25px 20px;
+            .category-title{
+                .category-icon{
+                    width: 70px;
+                    height: 70px;
+                    padding: 18px;
+                }
+                h3{
+                    width: calc(100% - 85px);
+                }
+            }
+        }
+    }
+    //About CSS 
+    .about-area{
+        &.style-one{
+            .about-img-wrap{
+                .about-img{
+                    width: calc(50% - 10px);
+                }
+                .book-doctor{
+                    padding: 20px 15px;
+                    min-width: 180px;
+                    .doctor-img{
+                        width: 60px;
+                        height: 60px;
+                        margin-bottom: 12px;
+                    }
+                    span{
+                        margin-bottom: 12px;
+                    }
+                    .tb-btn{
+                        padding: 7px 20px;
+                    }
+                }
+            } 
+            .about-content{
+                .counter-card-wrap{
+                    padding: 21px 25px 10px 25px;
+                    .counter-card{
+                        width: 50%;
+                        padding-left: 0;
+                        margin-bottom: 15px;
+                        text-align: center;
+                        &:before{
+                            display: none;
+                        }
+                        &:nth-child(2),
+                        &:nth-child(3){
+                            padding-left: 0;
+                        }
+                        &:first-child{
+                            &:before{
+                                display: none;
+                            }
+                        }
+                        h4{
+                            font-size: 36px;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+                .feature-list{
+                    margin: 35px 0 15px;
+                    li{
+                        width: 100%;
+                        padding-left: 31px;
+                        margin-bottom: 10px;
+                    }
+                }
+                .btn-wrap{
+                    a{
+                        margin-top: 10px;
+                        &:first-child{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            } 
+        }
+        &.style-two{
+            .about-img-wrap{
+                .about-img{
+                    height: 500px;
+                    width: 270px;
+                }
+                .booking-doctor{
+                    width: 300px; 
+                    .book-doctor{
+                        padding: 13px;
+                        .doctor-img{
+                            width: 60px;
+                            height: 60px;
+                        }
+                        .doctor-info{
+                            width: calc(100% - 152px);
+                            margin-left: 10px;
+                            h3{
+                                font-size: 18px;
+                                margin-bottom: 5px;
+                            }
+                        }
+                        .tb-btn{
+                            width: 82px;
+                            padding: 5px 5px;
+                        }
+                    }   
+                    .about-img-two{
+                        margin: 20px 0;
+                    }
+                }
+            }
+            .about-content{
+                .feature-item-wrap{
+                    margin-bottom: 25px;
+                    .feature-item{
+                        margin-bottom: 20px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                        .feature-icon{
+                            width: 80px;
+                            height: 80px;
+                        }
+                        .feature-info{
+                            width: 100%;
+                            margin: 18px 0 0;
+                        }
+                    }
+                }
+                .btn-wrap{
+                    .contact-card{
+                       width: 70%!important;
+                    }
+                }
+            }
+        }
+        &.style-three{
+            .about-img-wrap{
+                .circle-text-wrap{
+                    width: 120px;
+                    height: 120px;
+                    padding: 10px;
+                    .circle-text{
+                        max-width: 100px;
+                    }
+                }
+            }
+        }
+    }
+    //Location CSS
+     .location-card{
+        &.style-one{
+            padding: 10px;
+            .wishlist-counter{
+                top: 25px;
+                left: 25px;
+            }
+            .location-info{
+                width: calc(100% - 40px);
+                bottom: 22px;
+                padding: 21px 20px;
+            }
+        }
+    }
+    //Move Text CSS
+    .move-text{
+        height: 38px;
+        ul{
+            li{
+                font-size: 34px;
+                line-height: 34px;
+                margin: 0 5px;
+                padding: 0 45px 0 0;
+                letter-spacing: 0;
+                font-weight: 600;
+                &:after{
+                    top: 18px;
+                    background-size: 24px 20px;
+                    width: 24px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+    //Funfact CSS 
+    .counter-card-wrap{
+        &.style-one{
+            .counter-card{
+                width: 50%;
+                justify-content: flex-start;
+                &:after{
+                    display: none;
+                }
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4){
+                    padding: 0;
+                }
+                .counter-icon{
+                    margin-bottom: 14px;
+                }
+                h4{
+                    font-size: 32px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+        &.style-two{
+            .counter-card{
+                width: 100%;
+                .counter-icon{
+                    width: 80px;
+                    height: 80px;
+                }
+                .counter-text{
+                    width: calc(100% - 100px);
+                    h4{
+                        font-size: 42px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+    //Why Choose Us CSS
+    .wh-area{
+        &.style-one{
+            .wh-img-wrap{
+                height: 700px;
+                background-position: top center;
+                .testimonial-slider-one{
+                    width: calc(100% - 30px);
+                    .slider-btn{
+                        top: auto;
+                        bottom: 25px;
+                        left: 50%;
+                        right: auto;
+                        transform: translate(-50%,0);
+                        justify-content: center;
+                        .prev-btn,
+                        .next-btn{
+                            width: 40px;
+                            height: 40px;
+                            i{
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                    .testimonial-card{
+                        padding-bottom: 100px;
+                    }
+                }
+            }
+        }
+        &.style-two{
+            .wh-content{
+                .feature-item-list{
+                    max-width: 100%;
+                    margin-bottom: 25px;
+                    li{
+                        font-size: 18px;
+                        padding: 15.5px 16px 15.5px 60px;
+                        img{
+                            top: 16px; 
+                            max-width: 27px;   
+                        }
+                    }
+                }
+                .btn-wrap{
+                    .btn{
+                        margin-top: 10px;
+                        margin-right: 10px;
+                    }
+                    .contact-card{
+                        margin-top: 10px;
+                        margin-left: 0;
+                    }    
+                }
+            }    
+            .wh-img-wrap{
+                height: 450px;
+            }
+        }
+        &.style-three{
+            .wh-content{
+                .feature-item-wrap{
+                    .feature-item{
+                        padding: 22px;
+                        .feature-info{
+                            width: 100%;
+                            margin: 15px 0 0;
+                        }
+                    }
+                }
+            }
+            .wh-img-wrap{
+                height: 500px;
+                background-position: top center;
+                .book-doctor{
+                    width: 250px;
+                    padding: 20px;
+                    bottom: 30px;
+                    text-align: center;
+                    .doc-img{
+                        margin: 0 auto;
+                    }
+                    .doc-info{
+                        width: 100%;
+                        margin: 20px 0 0;
+                    }
+                    .tb-btn{
+                        margin: 15px auto 0;
+                    }
+                }
+            }    
+        }
+        &.style-four{
+            .wh-content{
+                .feature-item-list{
+                    max-width: 100%;
+                    margin-bottom: 25px;
+                    li{
+                        font-size: 16px;
+                        padding: 0 0 0 32px;
+                        margin-bottom: 15px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                        img{
+                            top: 2px; 
+                            max-width: 22px;   
+                        }
+                    }
+                }
+            }    
+            .wh-img-wrap{
+                height: 400px;
+            }
+        }
+    }
+    //Doctor Card CSS 
+    .hospital-card-wrap {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .hospital-card{
+        &.style-one,
+        &.style-two,
+        &.style-five{
+            padding: 10px;
+            .hospital-info{
+                padding: 0 5px 10px;
+                .booking-link{
+                    img{
+                        top: 4px;
+                        max-width: 16px;
+                    }
+                }
+            }
+        }
+        &.style-one{
+            .hospital-img{
+                .share-action{
+                    top: 15px;
+                    left: 15px;
+                }
+            }
+            .hospital-info{
+                .hospital-action-btn{
+                    &:after{
+                        left: calc(50% + 18px);
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+        &.style-two,
+        &.style-five{
+            .hospital-img{
+                .share-action{
+                    top: 15px;
+                    right: 15px;
+                }
+                .hospital-category{
+                    bottom: 15px;
+                    left: 15px;
+                }
+            }
+        }
+        &.style-three,
+        &.style-four{
+            padding: 12px;
+            .hospital-img{
+                width: 100%;
+            }
+            .hospital-info{
+                width: 100%;
+                margin: 20px 0 0;
+                padding: 0 10px 15px;
+            }
+        }
+    }
+    .hospital-search-form{
+        .form-group{
+            width: 100%;
+            margin: 0 0 20px;
+        }
+        button{
+            width: 100%;
+        }
+    }
+    //Doctor Card CSS 
+    .doctor-card{
+        &.style-one,
+        &.style-two{
+            padding: 10px;
+            .booking-info{
+                padding: 0 5px 10px;
+                .booking-link{
+                    img{
+                        top: 4px;
+                        max-width: 16px;
+                    }
+                }
+            }
+        }
+        &.style-one{
+            .doctor-img{
+                .share-action{
+                    top: 15px;
+                    left: 15px;
+                }
+            }
+        }
+        &.style-two{
+            .doctor-img{
+                .share-action{
+                    top: 15px;
+                    right: 15px;
+                }
+                .doctor-category{
+                    bottom: 15px;
+                    left: 15px;
+                }
+            }
+        }
+        &.style-four{
+            .doctor-info{
+                padding: 0 20px 25px 22px;
+            }
+        }
+    }
+    .features-list{
+        li{
+            padding-left: 28px;
+            i{
+                font-size: 24px;
+            }
+        }
+    }
+    .address-box-wrap{
+        padding: 10px;
+        .address-box{
+            padding: 25px 15px 5px;
+        }
+    }
+    .review-card-wrap{
+        .review-card{
+            padding: 22px 20px 22px;
+            .review-author{
+                margin-bottom: 20px;
+                .review-author-img{
+                    width: 60px;
+                    height: 60px;
+                }
+                .review-author-info{
+                    width: calc(100% - 75px);
+                    .ratings{
+                        width: 100%;
+                        margin: 7px 0;
+                        .rating{
+                            li{
+                                i{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //Work Process CSS 
+    .work-process-area{
+        &.style-two{
+            &:before{
+                height: 100%;
+            }
+            &:after{
+                top: auto;
+                bottom: 0;
+            }
+        }
+    }
+    .work-process-wrap{
+        &.style-one{
+            .process-card{
+                width: 100%;
+                padding: 0 15px;
+                .right-arrow{
+                    display: none;
+                }
+            }
+        }
+    }
+     //Promo Video CSS 
+     .promo-video{
+        &.style-two{
+            height: 380px;
+        }
+        &.style-five{
+            height: 380px;
+        }
+    }
+    //Promo Video CSS
+    .promo-video{
+        &.style-one{
+            height: 400px;
+        }
+    }
+    //Pricing Card CSS 
+    .pricing-card{
+        padding: 20px 12px 30px;
+        .pricing-header{
+            padding: 20px 15px;
+            .pricing-icon{
+                width: 75px;
+                height: 75px;
+                i{
+                    font-size: 36px;
+                }
+            }
+            .pricing-header-text{
+                width: calc(100% - 90px);
+                h2{
+                    font-size: 30px;
+                    span{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    //Testimonial CSS
+    .testimonial-card-wrap{
+        padding: 25px 22px 20px;
+    } 
+    .testimonial-bg{
+        &.style-one{
+            height: 430px;
+        }
+    }
+    .testimonial-content{
+        &.style-one{
+            .testimonial-slider-one{
+                padding: 10px 20px 23px;
+                .slider-btn{
+                    position: relative;
+                    bottom: auto;
+                    right: auto;
+                    justify-content: center;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    .testimonial-card{
+        &.style-one{
+            padding: 25px 20px;
+            .client-info-wrap{
+                margin-bottom: 26px;
+                .client-img{
+                    width: 65px;
+                    height: 65px;
+                }
+                .client-info{
+                    width: calc(100% - 80px);
+                }
+            }
+            .rating{
+                margin-bottom: 10px;
+                li{
+                    margin-right: 1px;
+                    i{
+                        font-size: 18px;
+                    }
+                }
+            }
+            p{
+                padding-right: 0;
+            }
+            .quote-icon{
+                bottom: 88px;
+                right: 15px;  
+                max-width: 19px;  
+            }
+        }
+        &.style-three{
+            .client-img{
+                width: 100%;
+            }
+            .client-info{
+                width: 100%;
+                margin:  20px 0 0;
+                padding: 0 10px 10px;
+                .rating{
+                    margin-top: 10px;
+                    li{
+                        i{
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .quote-icon{
+                    right: 20px;
+                    bottom: 20px;
+                }
+            }
+        }
+        &.style-two{
+            .rating{
+                li{
+                    i{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .client-info-wrap{
+                .client-img{
+                    width: 65px;
+                    height: 65px;
+                }
+                .client-info{
+                    width: calc(100% - 80px);
+                }
+            }
+        }
+        &.style-four{
+            h4{
+                font-size: 18px;
+                line-height: 28px;
+            }
+            .rating{
+                li{
+                    i{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .client-info-wrap{
+                position: relative;
+                .client-img{
+                    width: 62px;
+                    height: 62px;
+                }
+                .client-info{
+                    width: calc(100% - 78px);
+                    margin-left: 15px;
+                }
+                .quote-icon{
+                    position: absolute;
+                    bottom: 0px;
+                    right: -5px;
+                    max-width: 25px;
+                }
+            }
+        }
+        &.style-five{
+            .rating{
+                margin-bottom: 15px;
+                li{
+                    i{
+                        font-size: 18px;
+                    }
+                }
+            }
+            p{
+                font-size: 14px;
+                line-height: 24px;
+            }
+            .client-info-wrap{
+                .client-img{
+                    width: 55px;
+                    height: 55px;
+                    margin-right: 15px;
+                }
+                .client-info{
+                    h6{
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                    }
+                    span{
+                        font-size: 14px;
+                    }
+                }
+            }
+            p{
+                margin-bottom: 25px;
+            }
+        }
+    }
+    //Blog CSS
+    .blog-card{
+        &.style-one{
+            padding: 12px;
+            .blog-info{
+                padding: 0 8px 10px;
+                .blog-date{
+                    margin: -30px 10px 0 auto;
+                }
+                h3{
+                    line-height: 30px;
+                }
+                .blog-metainfo{
+                    margin-top: 10px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+        &.style-two{
+            padding: 12px;
+            .blog-img{
+                margin-bottom: 30px;
+            }
+            .blog-info{
+                padding: 0 10px 10px;
+                .blog-metainfo{
+                    margin-bottom: 13px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+        &.style-three{
+            .blog-info{
+                padding: 0 8px 15px;
+            }
+        }
+    }
+    //Location CSS 
+    .location-slider-two{
+        padding: 0 12px;
+    }
+    .location-card{
+        &.style-two{
+            .location-info{
+                padding: 25px 5px 15px;
+                &>div{
+                    width: 100%;
+                }
+                h3{
+                    font-size: 21px;
+                    line-height: 30px;
+                }
+                .location-link{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    //FAQ CSS 
+    .accordion{
+        &.style-one,
+        &.style-two{
+            .accordion-item {
+                margin: 0 0 20px;
+                padding: 0 0 5px;
+                .accordion-header {
+                    .accordion-button {
+                        font-size: 18px;
+                        line-height: 25px;
+                        align-items: center;
+                        padding:20px 50px 10px 20px;
+                        .accord-arrow {
+                            width:  20px;
+                            height: 20px;
+                            top: 22px;
+                            right: 14px;
+                        }
+                    }
+                }
+                .accordion-body{
+                    padding: 0px 35px 10px 20px;
+                    border-top: none;
+                    p {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+    //Hospital & Hospital Details CSS
+    .hospital-info-card{
+        .hospital-img{
+            width: 100%;
+            .share-action{
+                top: 15px;
+                left: 15px;
+            }
+        }
+        .hospital-info{
+            width: 100%;
+            margin: 20px 0 0;
+            padding: 0 5px 10px;
+            h3{
+                font-size: 22px;
+                margin-bottom: 8px;
+            }
+            .ratings{
+                .rating{
+                    li{
+                        i{
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+            .contact-info{
+                li{
+                    margin-bottom: 8px;
+                }
+            }
+            p{
+                margin-bottom: 8px;
+            }
+        }
+    }
+    //Contact CSS 
+    .contact-card-wrap{
+        &.style-one{
+            justify-content: center;
+            padding: 35px 0 10px;
+            .contact-card{
+                width: 100%;
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+    .contact-card{
+        .contact-icon{
+            width: 45px;
+            height: 45px;
+        }
+        .contact-info{
+            width: auto;
+        }
+    }
+    .contact-info-card{
+        padding: 25px 20px;
+        .contact-icon{
+            width: 100px;
+            height: 100px;
+            padding: 26px;
+        }
+        p{
+            padding: 0 10px;
+        }
+    }
+    .account-box{
+        padding: 25px 20px;
+    }
+    .form-box{
+        &.style-one{
+            padding: 25px 20px;
+            label{
+                font-size: 14px;
+            }
+            input,textarea,select{
+                font-size: 14px;
+            }
+        } 
+        &.style-two{
+            padding: 25px 20px 25px;
+        }  
+    }
+    .checkbox{
+        label{
+            font-size: 14px;
+        }
+    }
+    //BLog Details CSS
+    .blog-desc,
+    .hospital-desc,
+    .doctor-desc,
+    .terms-wrap{
+        p {
+            margin-bottom: 17px;
+        }
+        h1{
+            font-size: 30px;
+        }
+        h2{
+            font-size: 28px;
+        }
+        h3{
+            font-size: 26px;
+        }
+        h4{
+            font-size: 24px;
+        }
+        h5{
+            font-size: 22px;
+        }
+        h6{
+            font-size: 20px;
+        }
+        ol{
+            margin-top: 20px;
+            margin-bottom: 30px;
+            li{
+                margin-bottom: 15px;
+                padding-left: 3px;
+            }
+        }
+        .wp-blockquote{
+            padding: 25px 25px 25px 25px;
+            .quote-icon{
+                width: 90px;
+            }
+            p{
+                width: 100%;
+                margin: 15px 0 0;
+            }
+        }
+        .promo-video{
+            height: 340px;
+            .play-video{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .feature-item-list{
+            &.style-one{
+                li{
+                    padding: 0 0 0 32px;
+                    margin-bottom: 15px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    img{
+                        position: absolute;
+                        top: 2px; 
+                        left: 0px;  
+                        max-width: 21px; 
+                    }
+                    &:last-child{
+                        margin-bottom: 0;    
+                    }
+                }   
+            } 
+        }
+    }
+    .author-box{
+        padding: 25px 22px 30px;
+        .author-info{
+            width: 100%;
+            margin: 20px 0 0;
+        }
+    }
+    .comment-item-wrap{
+        .comment-item {
+            padding: 25px 20px 26px;
+            &.reply {
+                margin-left: 30px;
+            }
+            .comment-author-img {
+                width:50px;
+                height: 50px;
+                top: 5px;
+            }
+            .comment-author-info {
+                width: calc(100% - 65px);
+                .reply-btn{
+                    margin-top: 10px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .comment-form {
+        padding: 25px 20px 30px;
+        input,textarea{
+            font-size: 14px;
+        }
+    }
+}
+// Min width 768px to Max width 991px //
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .pt-90{
+        padding-top: 50px;
+    }
+    .pt-95{
+        padding-top: 55px;
+    }
+    .pt-110,
+    .pt-120{
+        padding-top: 80px;
+    }
+    .pb-90{
+        padding-bottom: 50px;
+    }
+    .pb-95{
+        padding-bottom: 55px;
+    }
+    .pb-120{
+        padding-bottom: 80px;
+    }
+    .ptb-120{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .mb-120{
+        margin-bottom: 80px;
+    }
+    .fs-36{
+        font-size: 32px;
+    }
+    .container-fluid{
+        &.style-one{
+            padding-left: calc((100% - 720px) / 2 + 12px);
+        }
+    }
+    .section-title{
+        font-size: 32px;
+        line-height: 42px;    
+    }
+    .breadcrumb-area{
+        .breadcrumb-wrap{
+            margin: 0 10px;
+            padding: 80px 0 82px;
+        }
+    }
+    //Hero CSS 
+    .hero-area{
+        &.style-one{
+            .hero-slide-item{
+                padding:100px 0 150px;
+                .hero-content{
+                    h1{
+                        font-size: 40px;
+                        line-height: 50px;
+                        padding-right: 50px;
+                    }
+                    p{
+                        max-width: 70%;
+                    }
+                }
+            }
+            .search-directory-wrap{
+                width: 100%;
+                .search-directory-form {
+                    justify-content: space-between;
+                    .form-group {
+                        width: calc(50% - 10px);
+                        margin: 0 0 20px;
+                    }
+                    button{
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        &.style-two{
+            margin-top: -60px;
+            padding: 175px 0 400px;
+            .hero-content{
+                h1{
+                    font-size: 49px;
+                    line-height: 60px;
+                }
+                .search-directory-wrap{
+                    width: 100%;
+                    .search-directory-form {
+                        justify-content: space-between;
+                        .form-group {
+                            width: calc(50% - 10px);
+                            margin: 0 0 20px;
+                        }
+                        button{
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        &.style-three{
+            .hero-img-one{
+                top: 30px;
+            }
+            .hero-img-one,
+            .hero-img-two{
+                max-width: 120px;
+            }
+            .hero-content{
+                h1{
+                    font-size: 44px;
+                    line-height: 54px;
+                    padding: 0 50px;
+                }
+                p{
+                    padding: 0 100px;
+                }
+            }
+            .search-directory-wrap{
+                width: 100%;
+                .search-directory-form {
+                    justify-content: space-between;
+                    .form-group {
+                        width: calc(50% - 10px);
+                        margin: 0 0 20px;
+                    }
+                    button{
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    //Hospital & Hospital Details CSS
+    .hospital-info-card{
+        .hospital-img{
+            width: 320px;
+        }
+        .hospital-info{
+            width: calc(100% - 340px);
+            h3{
+                margin-bottom: 8px;
+            }
+            .ratings{
+                .rating{
+                    li{
+                        i{
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+            .contact-info{
+                li{
+                    margin-bottom: 8px;
+                }
+            }
+            p{
+                margin-bottom: 8px;
+            }
+        }
+    }
+    //Promo Video CSS 
+    .promo-video{
+        &.style-two{
+            height: 420px;
+        }
+    }
+    //Work Process CSS 
+    .work-process-wrap{
+        &.style-one{
+            .process-card{
+                width: 50%;
+                padding: 0 20px;
+                .right-arrow{
+                    display: none;
+                }
+            }
+        }
+    }
+    //Move Text CSS
+    .move-text{
+        height: 46px;
+        ul{
+            li{
+                font-size: 44px;
+                line-height: 44px;
+                margin: 0 10px;
+                padding: 0 65px 0 0;
+                &:after{
+                    top: 19px;
+                    background-size: 30px 30px;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+    //Funfact CSS 
+    .counter-card-wrap{
+        &.style-one{
+            .counter-card{
+                &:nth-child(1){
+                    &:after{
+                        right: 20px;
+                    }
+                }
+                &:nth-child(2){
+                    padding-right: 30px;
+                    &:after{
+                        right: 1px;
+                    }
+                }
+                &:nth-child(3){
+                    padding-left: 10px;
+                    &:after{
+                        right: -5px;
+                    }
+                }
+                &:nth-child(4){
+                    padding-left: 30px;
+                    &:after{
+                        right: -65px;
+                    }
+                }
+                .counter-icon{
+                    display: block;
+                    margin-bottom: 18px;
+                }
+                h4{
+                    font-size: 42px;
+                }
+            }
+        }
+        &.style-two{
+            .counter-card{
+                width: 50%;
+                .counter-icon{
+                    width: 70px;
+                    height: 70px;
+                }
+                .counter-text{
+                    width: calc(100% - 85px);
+                    h4{
+                        font-size: 42px;
+                    }
+                }
+            }
+        }
+    }
+    //Contact CSS 
+    .contact-card-wrap{
+        &.style-one{
+            justify-content: center;
+            .contact-card{
+                width: 50%;
+                &:after{
+                    display: none;
+                }
+            }
+        }
+        &.style-two{
+            .contact-card{
+                margin-right: 13px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                .contact-icon{
+                    width: 42px;
+                    height: 42px;
+                }
+                .contact-info{
+                    margin-left: 11px;
+                    a,p,span{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+// Max width 991px //
+@media only screen and (max-width: 991px) {
+    .md-none {
+        display: none !important;
+    }
+    .mb-md-6{
+        margin-bottom: 6px;
+    }
+    .mb-md-20{
+        margin-bottom: 20px;
+    }
+    .mb-md-30{
+        margin-bottom: 30px;
+    }
+    //Why Choose Us CSS
+    .wh-area{
+        &.style-two,
+        &.style-four{
+            .wh-img-wrap{
+                margin-left: 35px;
+                .wh-img-one{
+                    left: -40px;
+                }
+            }
+        }
+    }
+    //FAQ CSS 
+    .faq-content{
+        p{
+            margin-bottom: 22px;
+        }
+        .faq-shape{
+            margin-top: 25px;
+            padding-right: 20px;
+        }
+    }
+    //Appointment CSS 
+    .appointment-area{
+        &.style-one{
+            &:after{
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-color: rgba(245, 239, 236, 0.8);
+                z-index: -1;
+            }
+            .book-doctor{
+                margin-top: 28px;
+            }
+        }
+    }
+    //Doctor Card CSS 
+    .filter-box{
+        padding: 25px 22px 25px;
+    }
+    .hospital-search-form{
+        &.style-two{
+            .form-group{
+                width:100%;
+                margin: 0 0 20px 0;
+            }
+            button{
+                width: 100%;
+            }
+        }
+    }
+    //Testimonial CSS 
+    .testimonial-slider-four{
+        .slider-btn{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 25px 0 0;
+            justify-content: center;
+            padding-bottom: 8px;
+            .prev-btn,
+            .next-btn{
+                position: relative;
+                top: auto;
+                transform: translateY(0);
+            }
+            .prev-btn{
+                left: auto;
+                margin-right: 8px;
+            }
+            .next-btn{
+                right: auto;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+// Min width 992px //
+@media only screen and (min-width:992px) {
+    .ms-lg-30{
+        margin-left: 30px!important;
+    }
+    .me-lg-30{
+        margin-right: 30px!important;
+    }
+    .container-fluid{
+        &.style-one{
+            padding-left: calc((100% - 960px) / 2 + 12px);
+        }
+    }
+    //Hospital CSS 
+    .hospital-desc{
+        .feature-item-list{
+            columns: 2;
+            max-width: 60%;
+            margin-bottom: -20px;
+            li{
+                margin-bottom: 22px!important;
+            }
+        }
+    }
+}
+// Min width 1199px //
+@media only screen and (max-width: 1199px) {
+    .lg-none {
+        display: none;
+    }
+    .mb-lg-20{
+        margin-bottom: 20px;
+    }
+    .mb-lg-25{
+        margin-bottom: 25px;
+    }
+    .mb-lg-30{
+        margin-bottom: 30px;
+    }
+    .sidebar{
+        margin-top: 50px;
+    }
+    //Hero CSS 
+    .hero-area{
+        &.style-one{
+            .hero-slider-one{
+                .slider-btn{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    position: absolute;
+                    bottom: 30px;
+                    left: 50%;
+                    transform: translateX(-50%);                    
+                    .prev-btn,
+                    .next-btn{
+                        position: relative;
+                        top: auto;
+                        border-radius: 50%;
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+    //Contact CSS 
+    .contact-info-card{
+        padding: 27px 20px;
+        p{
+            padding: 0 10px;
+        }
+    }
+}
+// Min width 992px to Max width 1199px //
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .pt-90{
+        padding-top: 70px;
+    }
+    .pt-95{
+        padding-top: 75px;
+    }
+    .pt-110,
+    .pt-120{
+        padding-top: 100px;
+    }
+    .pb-90{
+        padding-bottom: 70px;
+    }
+    .pb-95{
+        padding-bottom: 75px;
+    }
+    .pb-120{
+        padding-bottom: 100px;
+    }
+    .ptb-120{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .mb-120{
+        margin-bottom: 100px;
+    }
+    .section-title{
+        font-size: 36px;
+        line-height: 46px;    
+    }
+    //Hero CSS 
+    .hero-area{
+        &.style-one{
+            .hero-slide-item{
+                padding-bottom: 150px;
+                .hero-content{
+                    h1{
+                        padding-right: 50px;
+                    }
+                    p{
+                        max-width: 70%;
+                    }
+                }
+            }
+            .search-directory-wrap{
+                width: 100%;
+                .search-directory-form {
+                    .form-group {
+                        width: calc(22.4% - 22px);
+                    }
+                }
+            }
+        }
+        &.style-two{
+            padding: 175px 0 500px;
+            .hero-content{
+                h1{
+                    font-size: 64px;
+                    line-height: 73px;
+                }
+                .search-directory-wrap{
+                    .search-directory-form {
+                        .form-group {
+                            width: calc(22.4% - 23px);
+                        }
+                    }
+                }
+            }
+        }
+        &.style-three{
+            .hero-img-one,
+            .hero-img-two{
+                max-width: 120px;
+            }
+            .hero-content{
+                h1{
+                    font-size: 56px;
+                    line-height: 66px;
+                    padding: 0 50px;
+                }
+                p{
+                    padding: 0 150px;
+                }
+            }
+            .search-directory-wrap{
+                .search-directory-form{
+                    .form-group{
+                        width: calc(20.9% - 9px);
+                    }
+                }
+            }
+        }
+    }
+    //About CSS 
+    .about-area{
+        &.style-one{
+            .about-img-wrap{
+                .book-doctor{
+                    padding: 20px 15px;
+                }
+            }
+            .about-content{
+                .counter-card-wrap{
+                    padding: 20px 20px 20px 0;
+                    .counter-card{
+                        p{
+                            font-size: 14px;
+                        }
+                        &:first-child{
+                            padding-left: 20px;
+                        }
+                        &:nth-child(2){
+                            padding-left: 45px;
+                            &:before{
+                                left: 15px;
+                            }
+                        }
+                        &:nth-child(3){
+                            padding-left: 60px;
+                            &:before{
+                                left: 25px;
+                            }
+                        }
+                    }
+                }
+                .feature-list{
+                    margin: 35px 0 45px;
+                    li{
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    //Move Text CSS
+    .move-text{
+        height: 56px;
+        ul{
+            li{
+                font-size: 52px;
+                line-height: 54px;
+                margin: 0 10px;
+                padding: 0 65px 0 0;
+                &:after{
+                    top: 27px;
+                    background-size: 35px 31px;
+                    width: 35px;
+                    height: 31px;
+                }
+            }
+        }
+    }
+    //Contact CSS 
+    .contact-card-wrap{
+        &.style-two{
+            .contact-card{
+                margin-right: 20px;
+            }
+        }
+    }
+    //Counter Card CSS
+    .counter-card-wrap{
+        &.style-two{
+            .counter-card{
+                .counter-icon{
+                    width: 70px;
+                    height: 70px;
+                }
+                .counter-text{
+                    width: calc(100% - 85px);
+                    h4{
+                        font-size: 42px;
+                    }
+                }
+            }
+        }
+    }
+}
+// Min width 1200px //
+@media only screen and (min-width: 1200px) {
+    .container-fluid{
+        &.style-one{
+            padding-left: calc((100% - 1140px) / 2 + 12px);
+        }
+    }
+    .about-area{
+        &.style-three{
+            .about-content{
+                .feature-list{
+                    li{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .features-list{
+        &.style-one{
+            columns: 2;
+        }
+    }
+}
+// Min width 1200px to Max width 1299px //
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+}
+// Min width 1200px to Max width 1399px //
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    //Hero CSS 
+    .hero-area{
+        &.style-one{
+            .search-directory-wrap{
+                width: calc(100% + 80px);
+            }
+        }
+        &.style-two{
+            .search-directory-wrap{
+                width: calc(100% + 114px);
+                margin: 0 0 0 -57px;
+            }
+        }
+        &.style-three{
+            .hero-img-one,
+            .hero-img-two{
+                max-width: 180px;
+            }
+            .hero-content{
+                p{
+                    padding: 0 150px;
+                }
+            }
+            .search-directory-wrap{
+                .search-directory-form{
+                    .form-group{
+                        width: calc(21.6% - 9px);
+                    }
+                }
+            }
+        }
+    }
+     //Directory Card CSS 
+     .directory-card{
+        &.style-one{
+            padding: 30px 25px;
+            .directory-img{
+                width: 100%;
+            }
+            .directory-info{
+                width: 100%;
+                margin: 20px 0 0;
+                h2{
+                    font-size: 48px;
+                }
+                h3{
+                    margin-bottom: 16px;
+                }
+                p{
+                    margin-bottom: 21px;
+                }
+            }
+        }
+    }
+}
+// Min width 1400px //
+@media only screen and (min-width: 1400px) {
+    .ps-xxl-57 {
+        padding-left: 5.7rem !important;
+    }
+    .gx-xxl-18 {
+        --bs-gutter-x: 1.8rem;
+    }
+    .fs-xxl-18{
+        font-size: 18px;
+    }
+    .fs-xxl-20{
+        font-size: 20px;
+    }
+    .ms-xxl-n4{
+        margin-left: -45px;
+    }
+    .breadcrumb-area{
+        .breadcrumb-wrap{
+            margin: 0 10px;
+            padding: 150px 0 153px;
+            .br-shape-one{
+                bottom: 110px;
+                left: 148px;
+            }
+            .br-shape-two{
+                top: 110px;
+                right: 150px;
+            }
+        }
+    }
+    .container-fluid{
+        &.style-one{
+            padding-left: calc((100% - 1320px) / 2 + 12px);
+        }
+    }
+    //Hero CSS 
+    .hero-area{
+        &.style-one{
+            margin: 0 20px;
+            .hero-slider-one{
+                .slider-btn{
+                    .prev-btn{
+                        left: 0;
+                    }
+                    .next-btn{
+                        right: 0;
+                    }
+                }
+            }
+            .hero-slide-item{
+                .hero-content{
+                    padding-left: 40px;
+                    h1{
+                        font-size: 56px;
+                        line-height: 70px;
+                    }
+                    p{
+                        line-height: 30px;
+                    }
+                }
+            }
+            .search-directory-wrap{
+                width: calc(100% + 197px);
+            }
+        }
+        &.style-two{
+            margin: -100px 20px 30px;
+            .hero-content{
+                h1{
+                    font-size: 60px;
+                    line-height: 70px;
+                    padding: 0 90px;
+                }
+                p{
+                    line-height: 30px;
+                }
+                .search-directory-wrap{
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+        }
+        &.style-three{
+            .hero-content{
+                h1{
+                    font-size: 60px;
+                    line-height: 70px;
+                    padding: 0 90px;
+                }
+                p{
+                    line-height: 30px;
+                    padding: 0 150px;
+                }
+            }
+            .search-directory-wrap{
+                .search-directory-form{
+                    .form-group{
+                        width: calc(22.1% - 9px);
+                        
+                    }
+                }
+            }
+        }
+    }
+    //Category CSS 
+    .category-card{
+        &.style-four{
+            padding: 40px 35px;
+            .category-title{
+                .category-icon{
+                    width: 100px;
+                    height: 100px;
+                }
+                h3{
+                    width: calc(100% - 130px);
+                }
+            }
+        }
+    }
+    //Why Choose Us CSS 
+    .wh-area{
+        &.style-two{
+            .wh-content{
+                .feature-item-list{
+                    max-width: 70%;
+                }
+            }
+            .wh-img-wrap{
+                .wh-img-one{
+                    left: -80px;
+                }    
+            }
+        } 
+        &.style-four{
+            .wh-img-wrap{
+                .wh-img-one{
+                    left: -80px;
+                }    
+            }
+        }    
+    }
+    //Funfact CSS
+    .counter-card-wrap{
+        &.style-one{
+            .counter-card{
+                &:nth-child(1){
+                    &:after{
+                        right: 100px;
+                    }
+                }
+                &:nth-child(2){
+                    padding-right: 110px;
+                    &:after{
+                        right: 21px;
+                    }
+                }
+                &:nth-child(3){
+                    padding-left: 30px;
+                    &:after{
+                        right: -65px;
+                    }
+                }
+                &:nth-child(4){
+                    padding-left: 110px;
+                    &:after{
+                        right: -65px;
+                    }
+                }
+            }
+        }
+        &.style-two{
+            .counter-card{
+                .counter-icon{
+                    width: 82px;
+                    height: 82px;
+                }
+                .counter-text{
+                    width: calc(100% - 114px);
+                    h4{
+                        font-size: 60px;
+                    }
+                }
+                &:nth-child(2){
+                    padding-left: 30px;
+                }
+                &:nth-child(3){
+                    padding-left: 40px;
+                }
+                &:nth-child(4){
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+    //Move Text CSS
+    .move-text{
+        height: 115px;
+        ul{
+            li{
+                font-size: 100px;
+                line-height: 110px;
+                margin: 0 15px;
+                padding: 0 91px 0 0;
+            }
+        }
+    }
+    //Hospital & Hospital Details CSS
+    .hospital-info-card{
+        padding: 20px;
+        .hospital-img{
+            width: 420px;
+        }
+        .hospital-info{
+            width: calc(100% - 440px);
+            .contact-info{
+                li{
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+    .hospital-card{
+        &.style-one,
+        &.style-two,
+        &.style-five{
+            padding: 20px;
+            .hospital-info{
+                padding: 0 0 8px;
+                .btn{
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    font-size: 14px;
+                }
+                .booking-link{
+                    font-size: 14px;
+                }
+            }
+        }
+        &.style-one{
+            .hospital-img{
+                .share-action{
+                    top: 30px;
+                    left: 30px;
+                }
+            }
+        }
+        &.style-three,
+        &.style-four{
+            .hospital-img{
+                width: 280px;
+            }
+            .hospital-info{
+                width: calc(100% - 300px);
+            }
+        }
+    }
+    //Doctor Card CSS
+    .filter-box{
+        padding: 50px 50px 40px;
+    }
+    .doctor-card{
+        &.style-one,
+        &.style-two{
+            padding: 20px;
+            .doctor-info{
+                padding: 0 0 8px;
+                .btn{
+                    padding-left: 22px;
+                    padding-right: 22px;
+                    font-size: 14px;
+                }
+                .booking-link{
+                    font-size: 14px;
+                }
+            }
+        }
+        &.style-one{
+            .doctor-img{
+                .share-action{
+                    top: 30px;
+                    left: 30px;
+                }
+            }
+        }
+        &.style-three{
+            padding: 20px;
+        }
+    }
+    .address-box-wrap{
+        padding: 20px;
+        .address-box{
+            padding: 45px 50px 32px;
+        }
+    }
+    .review-card-wrap{
+        .review-card{
+            padding: 40px 39px 38px;
+        }
+    }
+    .department_selection{
+        width: calc(100% - 52px)!important;
+    }
+    //Location CSS
+    .location-card{
+        &.style-one{
+            padding: 20px;
+            .wishlist-counter{
+                top: 50px;
+                left: 50px;
+            }
+            .location-info{
+                width: calc(100% - 100px);
+                bottom: 50px;
+                padding: 21px 30px;
+            }
+        }
+        &.style-two{
+            padding: 20px;
+        }
+    }
+    //Pricing Card CSS 
+    .pricing-card{
+        padding: 20px 20px 40px;
+        .pricing-header{
+            .pricing-icon{
+                width: 100px;
+                height: 100px;
+                i{
+                    font-size: 48px;
+                }
+            }
+            .pricing-header-text{
+                width: calc(100% - 130px);
+                h2{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    //Testimonial CSS 
+    .testimonial-content{
+        &.style-one{
+            position: relative;
+            top: -6px;
+        }
+    }
+    .testimonial-content{
+        &.style-one{
+            .testimonial-slider-one{
+                padding: 25px 38px 35px;
+                .slider-btn{
+                    bottom: 60px;
+                    right: 30px;
+                }
+            }
+        }
+    }
+    .testimonial-card{
+        &.style-four{
+            padding: 25px 38px 35px 38px;
+            .rating{
+                li{
+                    i{
+                        font-size: 24px;
+                    }
+                }
+            }
+            .client-info-wrap{
+                padding-right: 35px;
+                .client-info{
+                    width: calc(100% - 200px);
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+    //promo CSS 
+    .promo-area{
+        margin: 0 20px;
+    }
+    .promo-card{
+        .promo-icon{
+            width: 100px;
+            height: 100px;
+        }
+        .promo-info{
+            width: calc(100% - 135px);
+        }
+    }
+    //Blog CSS 
+    .blog-card{
+        &.style-one{
+            padding: 20px;
+            .blog-info{
+                padding: 0 10px 10px;
+                .blog-date{
+                    margin: -30px 30px 0 auto;
+                }
+            }
+        }
+        &.style-two{
+            padding: 20px;
+            .blog-info{
+                padding: 0 11px 10px;
+            }
+        }
+        &.style-three{
+            padding: 20px;
+            .blog-img{
+                width: 267px;
+            }
+            .blog-info{
+                width: calc(100% - 307px);
+                margin-left: auto;
+                padding: 0;
+            }
+        }
+    }
+    //Contact CSS 
+     .contact-card-wrap{
+        &.style-one{
+            .contact-card{
+                &:nth-child(1){
+                    &:after{
+                        right: 60px;    
+                    }
+                }
+                &:nth-child(2){
+                    padding-left: 50px;
+                    &:after{
+                        right: -20px;    
+                    }
+                }    
+                &:nth-child(3){
+                    padding-left: 120px;
+                }    
+            }
+        }
+    }
+    //Testmonial CSS
+    .testimonial-card-wrap{
+        padding: 48px 65px 50px;
+    }
+    .testimonial-card{
+        &.style-five{
+            p{
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+    //Appointment CSS 
+    .appointment-area{
+        &.style-one{
+            margin: 0 20px 30px;
+        }
+    }
+    //Contact CSS 
+    .form-box{
+        &.style-one{
+            padding: 40px 50px 40px;
+        }
+    }
+}
+// Min width 1600px //
+@media only screen and (min-width: 1600px) {
+    .container{
+        &.style-one{
+            max-width: 1585px;
+        }
+    }
+    .container-fluid{
+        &.style-one{
+            padding-left: calc((100% - 1585px) / 2 + 12px);
+        }
+    }
+    .pb-xxl-10{
+        padding-bottom: 10px!important;
+    }
+    .section-title{
+        font-size: 46px;
+        line-height: 56px;
+    }
+    .breadcrumb-area{
+        .breadcrumb-wrap{
+            margin: 0 20px;
+        }
+    }
+    //Hero CSS 
+    .hero-area{
+        &.style-one{
+            .hero-slide-item{
+                .hero-content{
+                    padding-left: 70px;
+                    h1{
+                        font-size: 66px;
+                        line-height: 76px;
+                    }
+                }
+            }
+            .search-directory-wrap{
+                width: calc(100% + 70px);
+            }
+        }
+        &.style-two{
+            .hero-content{
+                h1{
+                    font-size: 66px;
+                    line-height: 76px;
+                    padding: 0 150px;
+                }
+                .search-directory-wrap{
+                    width: calc(100% - 200px);
+                    margin: 0 auto;
+                }
+            }
+        }
+        &.style-three{
+            .hero-content{
+                h1{
+                    font-size: 66px;
+                    line-height: 76px;
+                    padding: 0 150px;
+                }
+                p{
+                    padding: 0;
+                }
+            }
+        }
+    }
+    //About CSS 
+    .about-area{
+        &.style-one{
+            .about-img-wrap{
+                .book-doctor{
+                    padding: 30px 47px;
+                }
+            } 
+            .about-content{
+                .counter-card-wrap{
+                    padding: 21px 30px 23px 0px;
+                    .counter-card{
+                        width: 33.33%;
+                        padding-left: 30px;
+                        &:nth-child(2){
+                            padding-left: 85px;
+                            &:before{
+                                left: 15px;
+                            }
+                        }
+                        &:nth-child(3){
+                            padding-left: 100px;
+                            &:before{
+                                left: 45px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.style-two{
+            .about-img-wrap{
+                .about-img{
+                    height: 559px;
+                    width: 372px;
+                }
+                .booking-doctor{
+                    width: 433px; 
+                    .book-doctor{
+                        padding: 30px 30px;
+                        .doctor-img{
+                            width: 80px;
+                            height: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //Directory Card CSS 
+    .directory-card{
+        &.style-one{
+            padding: 38.5px 40px;
+            .directory-img{
+                width: 276px;
+            }
+            .directory-info{
+                width: calc(100% - 316px);
+                h2{
+                    font-size: 60px;
+                }
+                h3{
+                    margin-bottom: 16px;
+                }
+                p{
+                    margin-bottom: 21px;
+                }
+            }
+        }
+        &.style-two,
+        &.style-three{
+            padding: 44px 50px 42px;
+            .directory-icon{
+                width: 100px;
+                height: 100px;
+                padding: 8px;
+            }
+            .directory-info{
+                width: calc(100% - 135px);
+                h3{
+                    margin-bottom: 16px;
+                }
+                p{
+                    margin-bottom: 21px;
+                }
+            }
+        }
+        &.style-two{
+            padding: 44px 50px 42px;
+            .directory-info{
+                width: calc(100% - 135px);
+            }
+        }
+        &.style-three{
+            padding: 44px 25px 42px 40px;
+            .directory-icon{
+                width: 100px;
+                height: 100px;
+                padding: 8px;
+            }
+            .directory-info{
+                width: calc(100% - 135px);
+            }
+        }
+    }
+    //Why Choose Us CSS 
+    .wh-area{
+        &.style-one{
+            .wh-img-wrap{
+                .testimonial-slider-one{
+                    width: calc(100% - 60px);
+                    bottom: 30px;
+                    .slider-btn{
+                        right: 50px;
+                    }
+                }  
+            }    
+        }    
+        &.style-two{
+            .wh-content{
+                .feature-item-list{
+                    max-width: 64%;
+                }
+            }
+            .wh-img-wrap{
+                .wh-img-one{
+                    left: -112px;
+                }
+            }
+        }
+        &.style-three{
+            .wh-content{
+                .feature-item-wrap{
+                    .feature-item{
+                        padding: 26px 30px 24px;
+                    }
+                }
+            }    
+        }
+        &.style-four{
+            .wh-img-wrap{
+                .wh-img-one{
+                    left: -112px;
+                }
+            }
+        }
+    }
+    //Category CSS
+    .category-card{
+        &.style-one{
+            padding: 46px 22px;
+        }
+    }
+    //Hospital CSS 
+    .hospital-card-wrap {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .hospital-card{
+        &.style-one,
+        &.style-two,
+        &.style-five{
+            .hospital-info{
+                padding: 0 10px 8px;
+                .btn{
+                    padding-left: 28px;
+                    padding-right: 28px;
+                    font-size: 16px;
+                    &:hover{
+                        padding-left: 22px;
+                        padding-right: 30px;
+                    }
+                }
+                .booking-link{
+                    font-size: 16px;
+                    img{
+                        max-width: 20px;
+                    }
+                }
+            }
+        }
+        &.style-three,
+        &.style-four{
+            padding: 20px;
+            .hospital-img{
+                width: 284px;
+            }
+            .hospital-info{
+                padding-right: 15px;
+                width: calc(100% - 320px);
+            }
+        }
+    }
+    //Doctor CSS 
+    .doctor-card{
+        &.style-one,
+        &.style-two{
+            .doctor-info{
+                padding: 0 10px 8px;
+                .btn{
+                    font-size: 16px;
+                    padding-left: 26px;
+                    padding-right: 26px;
+                    font-size: 16px;
+                    &:hover{
+                        padding-left: 22px;
+                        padding-right: 30px;
+                    }
+                }
+                .booking-link{
+                    font-size: 16px;
+                    img{
+                        max-width: 20px;
+                    }
+                }
+            }
+        }
+    }
+    //Counter Card CSS 
+    .counter-area{
+        margin: 0 20px;
+    }
+    .counter-card-wrap{
+        &.style-two{
+            .counter-card{
+                &:nth-child(2){
+                    padding-left: 30px;
+                }
+                &:nth-child(3){
+                    padding-left: 70px;
+                }
+                &:nth-child(4){
+                    padding-left: 110px;
+                }
+            }
+        }
+    }
+    //Hospital & Hospital Details CSS
+     .hospital-info-card{
+        padding: 20px;
+        .hospital-img{
+            width: 500px;
+        }
+        .hospital-info{
+            width: calc(100% - 550px);
+        }
+    }
+    //Testimonial CSS 
+    .testimonial-card{
+        &.style-one{
+            padding: 50px 50px 45px;
+            .quote-icon{
+                bottom: 36px;
+                right: 50px;    
+            }
+            p{
+                padding-right: 55px;
+            }
+        }
+        &.style-three{
+            padding: 20px;
+            .client-img{
+                width: 275px;
+            }
+            .client-info{
+                width: calc(100% - 315px);
+                padding-right: 25px;
+                .quote-icon{
+                    bottom: 30px;
+                    right: 45px;
+                }
+                p{
+                    padding-right: 30px;
+                }
+                .rating{
+                    li{
+                        i{
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //Appointment CSS
+    .appointment-area{
+        &.style-one {
+            .appointment-content{
+                p {
+                    padding-right: 70px;
+                }    
+            }
+        }
+    }
+    //Contact CSS 
+    .contact-card-wrap{
+        &.style-one{
+            .contact-card{
+                &:nth-child(1){
+                    &:after{
+                        right: 82px;    
+                    }
+                }
+                &:nth-child(2){
+                    padding-left: 134px;
+                    &:after{
+                        right: -70px;    
+                    }
+                }    
+                &:nth-child(3){
+                    padding-left: 180px;
+                }    
+            }
+        }
+    }
+    .contact-info-card{
+        p{
+            padding: 0 50px;
+        }
+    }
+}
+// Min width 1920px //
+@media only screen and (min-width: 1920px) {
+    //Hero CSS 
+    .hero-area{
+        &.style-one{
+            .hero-slide-item{
+                .hero-content{
+                    padding-left: 0;
+                }
+            }
+            .search-directory-wrap{
+                width: 100%
+            }
+        }
+    }
+}

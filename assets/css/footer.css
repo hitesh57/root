@@ -1,0 +1,289 @@
+/*---------------------------------
+    Footer CSS 
+-----------------------------------*/
+.footer-area.style-one .footer-top, .footer-area.style-two .footer-top {
+  margin: 0 10px;
+}
+.footer-area .contact-info-box {
+  background-color: #E7C2D4;
+  padding: 52px 45px 51px 53px;
+}
+.footer-area .contact-info-box .contact-item {
+  width: 33.33%;
+}
+.footer-area .contact-info-box .contact-item:after {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  content: "";
+  width: 1px;
+  height: 60px;
+  background-color: rgba(0, 13, 68, 0.3);
+  transform: translateY(-50%) rotate(30deg);
+}
+.footer-area .contact-info-box .contact-item:last-child:after {
+  display: none;
+}
+.footer-area .contact-info-box .contact-item .contact-icon {
+  width: 50px;
+  height: 50px;
+  top: -2px;
+}
+.footer-area .contact-info-box .contact-item .contact-info {
+  width: calc(100% - 70px);
+  margin-left: auto;
+}
+.footer-area .contact-info-box .contact-item .contact-info span {
+  margin-bottom: 12px;
+}
+.footer-area .contact-info-widget {
+  background-color: #E7C2D4;
+  padding: 26px 20px 1px;
+}
+.footer-area .contact-info-widget .footer-widget-title:before {
+  background-color: rgba(0, 13, 68, 0.35);
+}
+.footer-area .contact-info-widget .contact-item {
+  margin-bottom: 25px;
+}
+.footer-area .contact-info-widget .contact-item img {
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+.footer-area .contact-info-widget .contact-item .contact-info {
+  padding-left: 25px;
+}
+.footer-area .contact-info-widget .contact-item .contact-info span {
+  margin-bottom: 11px;
+}
+.footer-area .footer-widget-title {
+  padding-bottom: 22px;
+  margin-bottom: 37px;
+}
+.footer-area .footer-widget-title:before, .footer-area .footer-widget-title:after {
+  position: absolute;
+  left: 0;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.footer-area .footer-widget-title:before {
+  bottom: 0;
+  width: 80px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.footer-area .footer-widget-title:after {
+  bottom: -1px;
+  width: 25px;
+  height: 3px;
+  background-color: var(--secondaryColor);
+}
+.footer-area .newsletter-form input {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  padding: 12px 15px;
+  height: 56px;
+  width: calc(100% - 76px);
+}
+.footer-area .newsletter-form input::-moz-placeholder {
+  color: var(--whiteColor);
+  opacity: 1;
+}
+.footer-area .newsletter-form input::placeholder {
+  color: var(--whiteColor);
+  opacity: 1;
+}
+.footer-area .newsletter-form button {
+  margin-left: 20px;
+  width: 56px;
+  height: 56px;
+  background-color: var(--secondaryColor);
+  color: var(--whiteColor);
+}
+.footer-area .newsletter-form button:hover {
+  background-color: var(--primaryColor);
+}
+.footer-area .newsletter-form.style-two input {
+  height: 70px;
+}
+.footer-area .newsletter-form.style-two button {
+  top: 5px;
+  right: 5px;
+  height: calc(100% - 10px);
+  width: 60px;
+}
+.footer-area .footer-widget .footer-menu li {
+  margin-bottom: 11px;
+}
+.footer-area .footer-widget .footer-menu li:last-child {
+  margin-bottom: 0;
+}
+.footer-area .footer-widget .social-profile li {
+  margin-right: 5px;
+}
+.footer-area .footer-widget .social-profile li:last-child {
+  margin-right: 0;
+}
+.footer-area .footer-widget .social-profile li a {
+  width: 38px;
+  height: 38px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+.footer-area .footer-widget .social-profile li a i {
+  color: var(--whiteColor);
+}
+.footer-area .footer-widget .social-profile li a:hover {
+  background-color: var(--secondaryColor);
+  border-color: transparent;
+}
+.footer-area .footer-widget .doctor-card-wrap .doctor-card-item {
+  margin-bottom: 25px;
+}
+.footer-area .footer-widget .doctor-card-wrap .doctor-card-item:last-child {
+  margin-bottom: 0;
+}
+.footer-area .footer-widget .doctor-card-wrap .doctor-card-item .doctor-img {
+  width: 80px;
+  height: 80px;
+}
+.footer-area .footer-widget .doctor-card-wrap .doctor-card-item .doctor-info {
+  width: calc(100% - 105px);
+  margin-left: auto;
+}
+.footer-area .footer-bottom {
+  padding: 22.5px 0;
+}
+.footer-area .footer-bottom .copyright-text i {
+  margin-right: 4px;
+}
+.footer-area .footer-bottom .footer-bottom-menu li {
+  display: inline-block;
+  margin-right: 15px;
+  padding-right: 25px;
+  position: relative;
+}
+.footer-area .footer-bottom .footer-bottom-menu li:after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--primaryColor);
+  transform: translateY(-50%);
+}
+.footer-area .footer-bottom .footer-bottom-menu li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+.footer-area .footer-bottom .footer-bottom-menu li:last-child:after {
+  display: none;
+}
+
+/*---------------------------------
+    Footer Responsive CSS 
+-----------------------------------*/
+@media only screen and (max-width: 767px) {
+  .footer-area .footer-widget-title {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+  }
+  .footer-area .contact-info-box {
+    padding: 30px 20px 10px 20px;
+  }
+  .footer-area .contact-info-box .contact-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer-area .contact-info-box .contact-item:after {
+    display: none;
+  }
+  .footer-area .contact-info-box .contact-item:last-child:after {
+    display: none;
+  }
+  .footer-area .contact-info-box .contact-item .contact-info {
+    width: calc(100% - 65px);
+  }
+  .footer-area .contact-info-box .contact-item .contact-info span {
+    margin-bottom: 6px;
+  }
+  .footer-area .contact-info-box .contact-item .contact-info span, .footer-area .contact-info-box .contact-item .contact-info a, .footer-area .contact-info-box .contact-item .contact-info p {
+    font-size: 14px;
+  }
+  .footer-area .newsletter-form.style-two input {
+    height: 55px;
+  }
+  .footer-area .newsletter-form.style-two button {
+    width: 50px;
+  }
+  .footer-area .newsletter-form.style-two button img {
+    max-width: 18px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-area .contact-info-box {
+    padding: 40px 20px 20px 20px;
+  }
+  .footer-area .contact-info-box .contact-item {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .footer-area .contact-info-box .contact-item:after {
+    display: none;
+  }
+  .footer-area .contact-info-box .contact-item:last-child:after {
+    display: none;
+  }
+  .footer-area .contact-info-box .contact-item .contact-info {
+    width: calc(100% - 65px);
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .footer-area .contact-info-box {
+    padding: 40px 20px 40px 20px;
+  }
+  .footer-area .contact-info-box .contact-item:after {
+    right: 30px;
+  }
+  .footer-area .contact-info-box .contact-item:last-child:after {
+    display: none;
+  }
+  .footer-area .contact-info-box .contact-item .contact-info {
+    width: calc(100% - 65px);
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .footer-area.style-one .footer-top, .footer-area.style-two .footer-top {
+    margin: 0 10px;
+  }
+  .footer-area.style-two .footer-top {
+    padding-top: 25px;
+  }
+  .footer-area .contact-info-widget {
+    margin-top: -25px;
+    padding: 26px 30px 1px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .footer-area.style-one .footer-top, .footer-area.style-two .footer-top {
+    margin: 0 20px;
+  }
+  .footer-area .contact-info-box .contact-item:nth-child(1):after {
+    right: 77px;
+  }
+  .footer-area .contact-info-box .contact-item:nth-child(2) {
+    padding-left: 110px;
+  }
+  .footer-area .contact-info-box .contact-item:nth-child(2):after {
+    right: -50px;
+  }
+  .footer-area .contact-info-box .contact-item:nth-child(3) {
+    padding-left: 150px;
+  }
+  .footer-area .contact-info-box .contact-item:nth-child(3):after {
+    right: 0;
+  }
+}/*# sourceMappingURL=footer.css.map */

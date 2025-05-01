@@ -1,0 +1,191 @@
+/*!
+*    ______ _       _   _
+*    |  ____| |     | | (_)
+*    | |__  | | __ _| |_ _  ___ ___  _ __
+*    |  __| | |/ _` | __| |/ __/ _ \| '_ \
+*    | |    | | (_| | |_| | (_| (_) | | | |
+*    |_|    |_|\__,_|\__|_|\___\___/|_| |_|
+*
+*         https://www.flaticon.com
+*/
+
+@font-face {
+    font-family: "flaticon_hinton";
+    src: url("../fonts/flaticon_hinton.woff2?e10eece73e53e415f29217f6fcdfe92e") format("woff2"),
+url("../fonts/flaticon_hinton.woff?e10eece73e53e415f29217f6fcdfe92e") format("woff"),
+url("../fonts/flaticon_hinton.eot?e10eece73e53e415f29217f6fcdfe92e#iefix") format("embedded-opentype"),
+url("../fonts/flaticon_hinton.ttf?e10eece73e53e415f29217f6fcdfe92e") format("truetype"),
+url("../fonts/flaticon_hinton.svg?e10eece73e53e415f29217f6fcdfe92e#flaticon_hinton") format("svg")
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_hinton !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-phone:before {
+    content: "\f101";
+}
+.flaticon-oxygen-mask:before {
+    content: "\f102";
+}
+.flaticon-test-tubes:before {
+    content: "\f103";
+}
+.flaticon-crutch:before {
+    content: "\f104";
+}
+.flaticon-mortar:before {
+    content: "\f105";
+}
+.flaticon-hospital:before {
+    content: "\f106";
+}
+.flaticon-tomography:before {
+    content: "\f107";
+}
+.flaticon-pharmacy:before {
+    content: "\f108";
+}
+.flaticon-pipette:before {
+    content: "\f109";
+}
+.flaticon-defibrillator:before {
+    content: "\f10a";
+}
+.flaticon-petri-dish:before {
+    content: "\f10b";
+}
+.flaticon-no-smoking:before {
+    content: "\f10c";
+}
+.flaticon-pharmacy-1:before {
+    content: "\f10d";
+}
+.flaticon-ultrasound:before {
+    content: "\f10e";
+}
+.flaticon-dentist:before {
+    content: "\f10f";
+}
+.flaticon-weight-scale:before {
+    content: "\f110";
+}
+.flaticon-appointment-book:before {
+    content: "\f111";
+}
+.flaticon-mask:before {
+    content: "\f112";
+}
+.flaticon-eye:before {
+    content: "\f113";
+}
+.flaticon-doctor:before {
+    content: "\f114";
+}
+.flaticon-surgery-tools:before {
+    content: "\f115";
+}
+.flaticon-thermometer:before {
+    content: "\f116";
+}
+.flaticon-broken-bone:before {
+    content: "\f117";
+}
+.flaticon-syringe:before {
+    content: "\f118";
+}
+.flaticon-test-tube:before {
+    content: "\f119";
+}
+.flaticon-ear:before {
+    content: "\f11a";
+}
+.flaticon-heart-rate:before {
+    content: "\f11b";
+}
+.flaticon-cannula:before {
+    content: "\f11c";
+}
+.flaticon-placeholder:before {
+    content: "\f11d";
+}
+.flaticon-first-aid-kit:before {
+    content: "\f11e";
+}
+.flaticon-drugs:before {
+    content: "\f11f";
+}
+.flaticon-calendar:before {
+    content: "\f120";
+}
+.flaticon-blood-transfusion:before {
+    content: "\f121";
+}
+.flaticon-wheelchair:before {
+    content: "\f122";
+}
+.flaticon-medical-history:before {
+    content: "\f123";
+}
+.flaticon-walker:before {
+    content: "\f124";
+}
+.flaticon-surgery-room:before {
+    content: "\f125";
+}
+.flaticon-bandage:before {
+    content: "\f126";
+}
+.flaticon-microscope:before {
+    content: "\f127";
+}
+.flaticon-urology:before {
+    content: "\f128";
+}
+.flaticon-x-ray:before {
+    content: "\f129";
+}
+.flaticon-hospital-bed:before {
+    content: "\f12a";
+}
+.flaticon-doctor-1:before {
+    content: "\f12b";
+}
+.flaticon-helicopter:before {
+    content: "\f12c";
+}
+.flaticon-sphygmomanometer:before {
+    content: "\f12d";
+}
+.flaticon-nurse:before {
+    content: "\f12e";
+}
+.flaticon-surgeon:before {
+    content: "\f12f";
+}
+.flaticon-ambulance:before {
+    content: "\f130";
+}
+.flaticon-cardiogram:before {
+    content: "\f131";
+}
+.flaticon-stethoscope:before {
+    content: "\f132";
+}
+.flaticon-mission:before {
+    content: "\f133";
+}
+.flaticon-focus:before {
+    content: "\f134";
+}
+.flaticon-value:before {
+    content: "\f135";
+}
+

@@ -1,0 +1,1524 @@
+/*-------------------------------
+    Dark Theme  CSS
+-------------------------------*/
+.switch-theme-mode{
+    position: fixed;
+    top: 200px;
+    right: 0;
+    z-index: 99;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        &:before {
+            position: absolute;
+            content: "DARK";
+            width: 70px;
+            left: 0px;
+            bottom: 4px;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 18px;
+            font-family: var(--secondaryFont);
+            letter-spacing: 3px;
+            text-align: center;
+            color: var(--titleColor);
+            top: 0;
+            bottom: 0;
+            border-radius: 5px 0 0 5px;
+            padding: 5px 3px;
+            margin: auto 0;
+            background-color: var(--whiteColor);
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+            box-shadow: 0 4px 15px rgba(0, 13, 68, 0.1);
+            // background: #fff url('../img/night.png');
+            // background-repeat: no-repeat;
+            // background-position: center;
+            // background-size: 17px;
+        }
+    }
+}
+
+input:checked + .slider {
+  background-color: transparent;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px  transparent;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  content: "LIGHT";
+  background-color: var(--titleColor);
+  color: var(--whiteColor);
+}
+.theme-light {
+    .navbar-brand,
+    .logo{
+        .logo-dark{
+            display: none!important;
+        }
+        .logo-light{
+            display: block!important;
+        }
+    }
+}
+.theme-dark {
+    .navbar-brand,
+    .logo{
+        .logo-dark{
+            display: block!important;
+        }
+        .logo-light{
+            display: none!important;
+        }
+    }
+    .text-dark,
+    .btn.style-four,
+    h1,h2,h3,h4,h5,h6,
+    .menu .menu-mobile-header .menu-mobile-arrow i{
+        color: var(--whiteColor)!important;
+    }
+    .category-card.style-one h3 a{
+        color: var(--whiteColor)!important;
+        &:hover{
+            color: var(--auto_secondaryColor)!important;
+        }
+    }
+    body{
+        color: rgba(255,255,255,0.7);
+    }
+    body,
+    .responsive-navbar{
+        background-color: #000;
+    }
+    .bg-berylGreen,
+    .category-card.style-one.bg-yellow,
+    .category-card.style-one.bg-chard,
+    .contact-info-card.bg-chard,
+    .contact-info-card.style-two.bg-mauve,
+    .directory-card.style-two.bg-chard,
+    .directory-card.style-three.bg-mauve,
+    .navbar-area.sticky {
+        background-color: var(--codColor)!important;
+    }
+    .bg-white,
+    .bg_secondary,
+    .bg-optional,
+    .category-card.style-one.bg-jordyBlue,
+    .category-card.style-one.bg-flower,
+    .db-wrapper .db-sidebar,
+    .contact-info-card.style-two.bg-jordyBlue,
+    .navbar-top .language-selector .dropdown,
+    .db-action-btn .dropdown,
+    .contact-info-card.bg-mauve,
+    .contact-card-btn .dropdown-menu,
+    .directory-card.style-one.bg-morning,
+    .directory-card.style-three.bg-jordyBlue,
+    .directory-card.style-two.bg-mauve,
+    .navbar-area .navbar .other-options .notif-option .dropdown-menu,
+    .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu {
+        background-color: var(--aztechColor)!important;
+    }
+    .contact-info-card .contact-icon{
+        background-color:rgba(255, 255, 255, 0.25)!important;
+        img{
+            filter: brightness(0) invert(1);
+        }
+    }
+    .bg-gray,
+    .bg-ash,
+    .contact-info-card.bg-jordyBlue,
+    .contact-info-card.style-two.bg-chard,
+    .directory-card.style-three.bg-chard,
+    .directory-card.style-two.bg-jordyBlue,
+    .directory-card.style-one.bg-berylGreen,
+    .taglist li a{
+        background-color: var(--mildColor)!important;
+    }
+    .category-card.style-one.bg-melanine{
+        background-color: #333;
+    }
+    .category-card.style-one.bg-mauve{
+        background-color: #131313;
+    }
+    .social-profile.style-two li a i,
+    .page-nav li:first-child a i,
+    .page-nav li:last-child a i,
+    .text-title,
+    .contact-card-btn .contact-card span,
+    .accordion-item .accordion-header .accordion-button,
+    .footer-wrap .copyright-text a{
+        color: var(--whiteColor);
+    }
+    p,
+    .text-para,
+    .checkbox label,
+    .footer-wrap .copyright-text{
+        color: var(--offwhiteColor)!important;
+    }
+    .category-card.style-one .cat-icon{
+        background-color: rgba(255, 255, 255, 0.2)!important;
+    }
+    .btn{
+        &.style-three{
+            color: var(--whiteColor);
+            &:before{
+                background-color: var(--secondaryColor);
+            }
+            img{
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    .navbar-top .language-selector .dropdown .dropdown-item {
+        border-color: rgba(255, 255, 255, 0.20);
+    }
+    .page-nav{
+        li{
+            a{
+                box-shadow: none;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                color: var(--offwhiteColor);
+                background-color: transparent;
+                &.active,
+                &:hover{
+                    background-color: var(--secondaryColor)!important;
+                    color: var(--whiteColor);
+                }
+                i{
+                    color: var(--offwhiteColor);
+                }
+            }
+        }
+    }
+    //Header
+    .navbar-area{
+        &.style-one{
+            border-top: 1px solid rgba(255, 255, 255, 0.10);
+        }
+    }
+    .navbar-area .other-options .option-item .currency-selector:after{
+        color: var(--whiteColor);
+    }
+    .menu .menu-mobile-header {
+        background-color: var(--aztechColor);
+    }
+    .menu .menu-mobile-header .menu-mobile-close i{
+        color: var(--whiteColor);
+    }
+    .navbar-area{
+       &.style-one,
+       &.style-two,
+       &.style-three{
+        .menu{
+            ul{
+                li{
+                    a{
+                        color: var(--whiteColor);
+                        &.active,
+                        &:hover{
+                            color: var(--secondaryColor);
+                        }
+                    }
+                    .menu-subs{
+                        background-color: var(--aztechColor);
+                        li{
+                            a{
+                                border-color: rgba(255, 255, 255, 0.20);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       }
+    }
+    .menu-mobile-trigger span {
+        background: var(--whiteColor);
+    }
+    .navbar-area.style-one .other-options .option-item:nth-child(2):before {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+    //Hero CSS
+    .hero-area{
+        .search-directory-wrap{
+            .search-directory-tablist{
+                .nav-item{
+                    .nav-link{
+                        color: var(--primaryColor);
+                        background-color: var(--codColor);
+                        border: 1px solid var(--primaryColor);
+                        &:hover,
+                        &.active{
+                            background-color: var(--secondaryColor);
+                            color: var(--whiteColor);
+                            border-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+        &.style-three{
+            .search-directory-wrap{
+                .tab-content{
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+    .hero-area.style-one .hero-slider-one .slider-btn .prev-btn,
+    .hero-area.style-one .hero-slider-one .slider-btn .next-btn {
+        background-color: #222;
+        i{
+            color: var(--whiteColor);
+        }
+        &:hover{
+            background-color: var(--primaryColor);
+        }
+    }
+    .hero-area .search-directory-wrap .search-directory-form .form-group img {
+       filter: brightness(0) invert(1);
+    }
+    .hero-area.style-three:after {
+        background-image: url(../img/hero/hero-curve-dark.png);
+    }
+    //Category CSS
+    .category-card{
+        &.style-one,
+        &.style-two{
+            .cat-icon{
+                i{
+                    color: var(--whiteColor);
+                }
+            }
+        }
+        &.style-three{
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            .cat-icon{
+                i{
+                    color: var(--whiteColor);
+                }
+            }
+        }
+    }
+            //About Us CSS
+    .about-area{
+        &.style-one{
+            .about-content{
+                .counter-card-wrap{
+                    .counter-card{
+                        &:before{
+                            background-color: rgba(255,255,255,0.2);
+                        }
+                    }
+                }
+            } 
+        }
+        &.style-two{
+            .about-img-wrap{
+                .booking-doctor{
+                    .book-doctor{
+                        .doctor-img{
+                            border: 2px solid var(--secondaryColor);
+                        }
+                    }   
+                }
+            }
+        }
+        &.style-three{
+            .about-content{
+                .btn-wrap{
+                    .book-doctor-card{
+                        .doc-img{
+                            border: 2px solid var(--primaryColor);
+                        }
+                    }
+                }
+            }    
+        }
+    }
+    /*-------------------------------
+        Funfact Section CSS
+    -------------------------------*/
+    .counter-card-wrap{
+        &.style-one{
+            .counter-card{
+                &:after{
+                    background-color: rgba(255, 255, 255, 0.25);
+                }
+            }
+        }
+    }
+    /*-------------------------------
+    Moving Text Section CSS
+    -------------------------------*/
+    .move-text{
+        ul{
+            li{
+                -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+            }
+        }
+    }
+    .doctor-card.style-three,
+    .comment-item-wrap .comment-item,
+    .author-box,
+    .comment-form,
+    .form-box.style-one,
+    .form-box.style-two{
+        box-shadow: none;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    /*-------------------------------
+            Why Choose Us CSS
+    -------------------------------*/
+    .wh-area{
+        &.style-one{
+            .wh-img-wrap{
+                .testimonial-slider-one{
+                    .slider-btn{
+                        .prev-btn,
+                        .next-btn{
+                            background-color: rgba(0, 0, 0, 0.4);
+                            border: 1px solid rgba(255, 255, 255, 0.3);
+                            &:hover{
+                                background-color: var(--primaryColor);
+                                border-color: transparent;
+                            }
+                            i{
+                                color: var(--whiteColor);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       
+        &.style-three{
+            .wh-content{
+                .feature-item-wrap{
+                    .feature-item{
+                        box-shadow: 0 4px 15px rgba(1, 1, 1, 0.10);
+                        &:hover{
+                            .feature-icon{
+                                background-color: var(--primaryColor);
+                                img{
+                                    filter: brightness(0) invert(1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .alert-box,
+    .category-card.style-four {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    /*-------------------------------
+            Location Section CSS
+    -------------------------------*/
+    .location-card{
+        &.style-one{
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: none;
+            &:hover{
+                box-shadow: 0 4px 25px rgba(255, 255, 255, 0.2);
+            }
+        }
+        &.style-two{
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: none;
+            &:hover{
+                border-color: transparent;
+            }
+        }
+    }
+    /*------------------------------------
+        Hospital & Hospital Details CSS
+    --------------------------------------*/
+    .hospital-card{
+        &.style-one{
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0px 6px 0px rgba(255, 255, 255, 0.3);
+            .hospital-info{
+                .hospital-action-btn{
+                    &:after{
+                        color: rgba(255, 255, 255, 0.30);
+                    }
+                }
+            }
+            &:hover{
+                border-color: transparent;
+                box-shadow: 0 4px 25px rgba(255, 255, 255, 0.30);
+            }
+        }
+        &.style-two,
+        &.style-five{
+            .hospital-info{
+                .hospital-metainfo{
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+                }
+            }
+        }
+        &.style-two{
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+        &.style-four,
+        &.style-five{
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.30);
+        }
+    }
+    .share-action{
+        .share-btn{
+            .social-profile{
+                li{
+                    a{
+                        background-color: var(--whiteColor);
+                        &:hover{
+                            background-color: var(--primaryColor);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hospital-info-card{
+        box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+        .hospital-info{
+            
+            .contact-info{
+                li{
+                    i{
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+    /*------------------------------------
+        Doctor & Doctor Details Card CSS
+    ------------------------------------*/
+    .filter-box{
+        box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+        .search-tag {
+            li{
+                .input:checked + label:before {
+                    content: "";
+                    background-color: var(--primaryColor);
+                }
+                [type="radio"]:checked + label:before,
+                [type="radio"]:not(:checked) + label:before {
+                    border: 1px solid rgba(255,255,255,0.25);
+                }
+                [type="radio"]:checked + label:after,
+                [type="radio"]:not(:checked) + label:after {
+                    background-color: var(--primaryColor);
+                }
+            }
+        }
+    }
+    .doctor-card{
+        &.style-one,
+        &.style-two,
+        &.style-five{
+            .doctor-info{
+                .doctors-location{
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+                }
+            }
+        }
+        &.style-one,
+        &.style-five{
+            border: 1px solid rgba(255, 255, 255, 0.20);
+            box-shadow: none;
+            &:hover{
+                box-shadow: none;
+            }
+        }
+        &.style-two,
+        &.style-five{
+            .doctor-info{
+                .doctors-location{
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+                }
+            }
+        }
+        &.style-three{
+            padding: 15px;
+            .doctor-img{
+                .social-profile{
+                    li{
+                        
+                        a{
+                            background-color: var(--offwhiteColor);
+                            i{
+                                color: var(--codColor);
+                            }
+                            &:hover{
+                                background-color: var(--secondaryColor);
+                                i{
+                                    color: var(--whiteColor);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.style-four{
+            box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+        }
+    }
+    .contact-card-btn button img,
+    .db-action-btn button img,
+    .navbar-area .other-options .option-item .currency-selector img,
+    .link-hover-title img,
+    .link-hover-primary img,
+    .hover-text-primary img,
+    .hover-text-title img,
+    .circle-text,
+    .booking-link img,
+    .db-upload-file button img,
+    .hospital-card.style-two .hospital-info .hospital-metainfo li img,
+    .hospital-card.style-five .hospital-info .hospital-metainfo li img,
+    .counter-card-wrap.style-two .counter-card .counter-icon img,
+    .process-card.style-one .right-arrow,
+    .category-widget ul li a i, .category-widget ul li a img,
+    .hospital-card.style-three .hospital-info .booking-link img, 
+    .hospital-card.style-four .hospital-info .booking-link img,
+    .directory-card.style-two .directory-icon img,
+    .directory-card.style-three .directory-icon img,
+    .directory-card.style-one .directory-info a img,
+    .doctor-card.style-one .doctor-info .doctors-location i,
+    .doctor-card.style-one .doctor-info .doctors-location img,
+    .doctor-card.style-two .doctor-info .doctors-location i,
+    .doctor-card.style-two .doctor-info .doctors-location img,
+    .doctor-card.style-five .doctor-info .doctors-location i,
+    .doctor-card.style-five .doctor-info .doctors-location img,
+    .doctor-card.style-one .doctor-info .booking-link img,
+    .doctor-card.style-two .doctor-info .booking-link img {
+       filter: brightness(0) invert(1);
+    }
+    .appointment-area.style-one,
+    .hero-area.style-one .hero-slide-item .hero-bg{
+        &:after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4878151944371498) 58%);
+            z-index: -1;
+        }
+    }
+    .address-box-wrap{
+        box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+    }
+    .review-card-wrap{
+        .review-card{
+            box-shadow: 0 4px 15px rgba(255,255,255,0.25);
+        }
+    }
+    .account-box,
+    .department_selection{
+        border: 1px solid rgba(255,255,255,0.2);
+        box-shadow: none;
+    }
+    .navbar-area .other-options .option-item .currency-selector select option{
+        background-color: var(--titleColor);
+    }
+    .availability-table{
+        border-left: 1px solid rgba(255,255,255,0.2);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        border-right: 1px solid rgba(255,255,255,0.2);
+        tbody{
+            tr{
+                td{
+                    background-color: var(--codColor);
+                    border-right: 1px solid rgba(255,255,255,0.2);
+                    border-bottom: 1px solid rgba(255,255,255,0.2);
+                }
+            }
+        }
+        &.style-two{
+            tr{
+                th,td{
+                    .promo-table-data{
+                        &:before{
+                            background-color: var(--offwhiteColor);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .doctor-tablist{
+        .nav-item {
+            .nav-link {
+                border: 1px solid rgba(255, 255, 255, 0.25);
+                color: var(--offwhiteColor);
+                &.active,
+                &:hover {
+                    background-color: var(--primaryColor);
+                    color: var(--whiteColor);
+                    border-color: transparent;
+                }
+            }
+        }
+        &.style-two{
+            .nav-item {
+                .nav-link {
+                    &.active,
+                    &:hover {
+                        background-color: #FEC091;
+                        color: var(--titleColor);
+                        border-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+    /*-------------------------------
+        Testimonial Section CSS
+    -------------------------------*/
+    .testimonial-bg{
+        &.style-one{
+            .circle-text-box{
+                bottom: -1px;
+                padding: 20px 20px 0 0;
+                border-radius: 0 20px 0;
+                &:before {
+                    box-shadow: -12px -12px #000;
+                }
+                &:after {
+                    box-shadow: -12px -12px #000;
+                }
+            }
+        }
+    }
+    .testimonial-content{
+        &.style-one{
+            .testimonial-slider-one{
+                border: 1px solid rgba(255, 255, 255, 0.25);
+            }
+        }
+    }
+    .testimonial-card{
+        &.style-one{
+            .client-info-wrap{
+                .client-img{
+                    border: 2px solid var(--secondaryColor);
+                }
+            }
+        }
+        &.style-four{
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+        }
+    }
+    .testimonial-slider-four{
+        .slider-btn{
+            .prev-btn,
+            .next-btn{
+                box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+    /*------------------------------------
+            Work process Section CSS
+    ------------------------------------*/
+    .work-process-area{
+        &.style-two{
+            &:before{
+                background-color: var(--aztechColor);
+            }
+            &:after{
+                background-image: url(../img/hero/hero-curve-dark.png);
+            }
+        }
+    }
+    /*-------------------------------
+            Appointment Section CSS
+    -------------------------------*/
+    .appointment-area{
+        &.style-one{
+            .book-doctor{
+                border: 1px solid rgba(255, 255, 255, 0.25);
+            }
+        }
+    }
+    /*---------------------------------
+        FAQ & Appointment CSS 
+    -----------------------------------*/
+    .accordion{
+        &.style-one,
+        &.style-two{
+            .accordion-item {
+                .accordion-header {
+                    .accordion-button {
+                        color: var(--whiteColor);
+                        .accord-arrow {
+                            i {
+                                color: rgba(255, 255, 255, 0.3);
+                            }
+                        }
+                    }
+                }
+                &.collapsed{
+                    .accordion-button {
+                        color: var(--whiteColor);
+                        .accord-arrow {
+                            border: 1px solid var(--primaryColor);
+                            i{
+                                color: var(--primaryColor);
+                            }
+                        }
+                    }
+                }
+                &:not(.collapsed){
+                    box-shadow: none;
+                    .accordion-button {
+                        .accord-arrow {
+                            border: 1px solid var(--secondaryColor);
+                            i{
+                                color: var(--secondaryColor);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.style-one{
+            .accordion-item{
+                background-color: transparent;
+                border: 1px solid rgba(255, 255, 255, 0.25);
+            }
+        }
+        &.style-two{
+            .accordion-item{
+                background-color: var(--codColor);
+            }
+        }
+    }
+    .appointment-box{
+        &.style-one{
+            background-color:var(--aztechColor);
+        }
+        &.style-two{
+            background-color:var(--aztechColor);
+        }
+    }
+    .error-wrap{
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .account-box{
+        .or-text{
+            margin: 15px 0;
+            &:after{
+                background-color: rgba(255, 255, 255, 0.20)
+            }
+            span{
+                background-color: #000;
+            }
+        }
+    }
+    .tt-btn{
+        &.style-one{
+            &:hover{
+                background-color: var(--secondaryColor)!important;
+                color: var(--whiteColor);
+                i{
+                    color: var(--whiteColor);
+                }
+            }
+        }
+        &.style-two{
+            &:hover{
+                background-color: var(--secondaryColor)!important;
+                color: var(--whiteColor);
+                i{
+                    color: var(--whiteColor);
+                }
+            }
+        }
+    }
+   
+    /*-------------------------------
+            Blog CSS
+    -------------------------------*/
+    .blog-card{
+        &.style-one{
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0px 5px 0px rgba(255, 255, 255, 0.25);
+            &:hover{
+                box-shadow: 0 4px 25px rgba(255, 255, 255, 0.25);
+            }
+        }
+        &.style-two{
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            &:hover{
+                border-color: transparent;
+                box-shadow: 0 4px 25px rgba(255, 255, 255, 0.25);
+            }
+        }
+        &.style-three{
+            box-shadow: none;
+            border: 1px solid rgba(255,255,255,0.2);
+            &:hover{
+                border-color: var(--secondaryColor);
+            }
+        }
+        &.style-four{
+            box-shadow: none;
+            border: 1px solid rgba(255,255,255,0.2);
+            &:hover{
+                box-shadow: 0 10px 35px rgba(255, 255, 255, 0.25);
+            }
+        }
+    }
+    /*-------------------------------
+            Pricing Plan CSS
+    -------------------------------*/
+    .pricing-card{
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.25);
+        &:hover{
+            box-shadow: 0 10px 35px rgba(255, 255, 255, 0.25);
+        }
+        .pricing-header{
+            .pricing-icon{
+                i{
+                    color: var(--whiteColor);
+                }
+            }
+        }
+    }
+
+    /*-------------------------------
+            Brand Partner CSS
+    -------------------------------*/
+    .brand-logo{
+        &.style-two{
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+        }
+    }
+    /*-------------------------------
+            Contact CSS
+    -------------------------------*/
+    .contact-card-wrap{
+        &.style-one{
+            .contact-card{
+                &:after{
+                    background-color: rgba(255,255,255,0.3);
+                }
+            }
+        }
+    }
+    .form-wrapper{
+        .form-group{
+            input,textarea{
+                &::placeholder{
+                    opacity: 1;
+                    color: var(--whiteColor);
+                }
+            }
+            select{
+                background-image: url(../img/icons/down-arrow-white.svg);
+                background-repeat: no-repeat;
+                background-position: calc(100% - 18px) 50%;
+            }
+        }
+        &.style-two{
+            .form-group{
+                input,select,textarea{
+                    border: 1px solid rgba(255, 255, 255, 0.25);
+                }
+            }
+        }
+    }
+    .form-box{
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.25); 
+    }
+    .checkbox {
+        label {
+            color: var(--offwhiteColor);
+        }
+        &.style-one{
+            label{
+                &:before {
+                    border: 1px solid rgba(255, 255, 255, 0.25); 
+                }
+            }
+        }
+        &.style-two{
+            label{
+                &:before {
+                    border: 1px solid rgba(255, 255, 255, 0.25);
+                }
+            }
+        }
+        &.style-three{
+            label{
+                color: var(--offwhiteColor);
+                &:before {
+                    border: 1px solid rgba(255, 255, 255, 0.25);
+                }
+            }
+        }
+        
+        &.style-four{
+            label{
+                &:before {
+                    border: 1px solid rgba(255, 255, 255, 0.25);
+                }
+            }
+        }
+        &.style-five{
+            label{
+                &:before {
+                    border: 1px solid rgba(255, 255, 255, 0.25);
+                }
+            }
+        }
+    }
+
+    /*-------------------------------
+            Blog Details CSS
+    -------------------------------*/
+    .blog-desc,
+    .hospital-desc,
+    .doctor-desc,
+    .terms-wrap{
+        p {
+            strong,b{
+                color: var(--whiteColor);
+            }
+        }
+      
+    }
+    .post-metaoption{
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+        .tag-list{
+            li{
+                a{
+                    color: var(--offwhiteColor);
+                    &:hover{
+                        color: var(--primaryColor);    
+                    }
+                }
+            }
+        }
+    }
+    
+    /*-------------------------------
+            Sidebar Widget CSS
+    -------------------------------*/
+    .sidebar{
+        .sidebar-widget{
+            box-shadow: none;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            .sidebar-widget-title{
+                &.style-two{
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                    &:after{
+                        background-color: var(--primaryColor);
+                    }
+                }
+            }
+            .doctor-card{
+                box-shadow: none;
+            }
+        }
+    }
+    //Search Widget CSS 
+    .search-widget{
+        input{
+            &::placeholder{
+                opacity: 1;
+                color: var(--offwhiteColor);
+            }
+        }
+    }
+    //Category Widget CSS 
+    .category-widget {
+        ul{
+            li{
+                a{
+                    color: var(--whiteColor);
+                    background-color: var(--aztechColor);
+                    &.active,
+                    &:hover{
+                        color: var(--whiteColor);
+                        background-color: var(--secondaryColor);
+                        img{
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+                }
+            }
+        }
+        .social-profile{
+            li{
+                border-right: 1px solid rgba(255, 255, 255, 0.2);
+                a{
+                    i{
+                        color: var(--offwhiteColor);
+                    }
+                    &:hover{
+                        i{
+                            color: var(--primaryColor);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .booking-list{
+        li{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        }
+    }
+    .slider-btn{
+        .prev-btn,
+        .next-btn{
+            background-color: var(--codColor);
+            i{
+                color: var(--whiteColor);
+            }
+            &:hover{
+                background-color: var(--primaryColor);
+                i{
+                    color: var(--whiteColor);
+                }
+            }
+        }
+    }
+    //Tags Widget CSS 
+    .tags-widget {
+        ul{
+            li {
+                a {
+                    color: var(--whiteColor);
+                    background-color:var(--aztechColor);
+                    &:hover {
+                        background-color: var(--secondaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+    //Doctor Info Widget
+    .single-doctor-info-widget{
+        .contact-info{
+            li{
+                i,img{
+                    color: var(--whiteColor);
+                }
+            }
+        }
+    }
+    //Skills Widget
+    .progressbar-wrap{
+        .progress-item{
+            .progress{
+                height: 9px;
+                background: var(--aztechColor);
+                border-radius: 50px;
+                .progress-bar{
+                    height: 9px;
+                    border-radius: 50px;
+                    background-color: var(--secondaryColor);
+                }
+            }
+        }
+    }
+   
+    //Footer CSS 
+    .footer-area{
+        .contact-info-box{
+            background-color: var(--aztechColor);
+            .contact-item{
+                &:after{
+                    background-color: rgba(255,255,255,0.2);
+                }
+            }
+        }
+        .contact-info-widget{
+            background-color: var(--aztechColor);
+            .footer-widget-title{
+                &:before{
+                    background-color:rgba(255,255,255,0.25);
+                }
+            }
+        }
+        .footer-widget{
+            .doctor-card-wrap{
+                .doctor-card-item{
+                    margin-bottom: 25px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    .doctor-img{
+                        width: 80px;
+                        height: 80px;
+                    }
+                    .doctor-info{
+                        width: calc(100% - 105px);
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+    //Dashboard CSS
+    .db-wrapper{
+        .db-sidebar{
+            background-color: var(--codColor);
+            .db-sidebar-menu {
+                .menu-item {
+                    &.has-dropdown{
+                        .parent{
+                            &:after{
+                                color: var(--offwhiteColor);
+                            }
+                        }
+                    }
+                    .parent {
+                        background-color: var(--mildColor);
+                        color: var(--offwhiteColor);
+                        img{
+                            filter: brightness(0) invert(1);
+                        }
+                        a{
+                            color: var(--offwhiteColor);
+                        }
+                    }
+                    .dropdown {
+                        .dropdown-item {
+                            a{
+                                color: var(--offwhiteColor);
+                                &:before{
+                                    border: 1px solid var(--primaryColor);
+                                }
+                                &.active,
+                                &:hover {
+                                    background-color: var(--primaryColor);
+                                    color: var(--whiteColor);
+                                    &:before{
+                                        border: 1px solid var(--whiteColor);
+                                    }
+                                    &:after{
+                                        background-color: var(--whiteColor);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.active,
+                    &:hover{
+                        &.has-dropdown{
+                            .parent{
+                                &:after{
+                                    color: var(--whiteColor);
+                                }
+                            }
+                        }
+                        .parent{
+                            background-color: var(--primaryColor);
+                            color: var(--whiteColor);
+                            a{
+                                color: var(--whiteColor);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .db-main{
+            .db-header{
+                .db-mobile-menu,
+                .db-burger-menu{
+                    img{
+                        transition: var(--transition);
+                        filter: brightness(0) invert(1);
+                    }
+                .db-header-left{
+                    .db-searchbox{
+                        input{
+                            color: var(--whiteColor);
+                            &::placeholder{
+                                color: var(--whiteColor);
+                            }
+                        }
+                        button{
+                            background-color: var(--primaryColor);
+                            &:hover{
+                                background-color: var(--secondaryColor);
+                            }
+                        }
+                    }
+                }
+                .db-header-right{
+                    .language-selector {
+                        .selected-language {
+                            &:after{
+                                background-image: url(../img/icons/down-arrow-white.svg);
+                                background-size: 10px 10px;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                        .dropdown {
+                            background-color: var(--codColor)!important;
+                            box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+                        }
+                    }
+                    .db-switch-theme{
+                        .slider {
+                            position: absolute;
+                            cursor: pointer;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            -webkit-transition: 0.4s;
+                            transition: 0.4s;
+                            &:before {
+                                position: absolute;
+                                content: "";
+                                top: 50%;
+                                left: 50%;
+                                width: 45px;
+                                height: 45px;
+                                border-radius: 5px;
+                                transform: translate(-50%,-50%);
+                                -webkit-transition: 0.4s;
+                                transition: 0.4s;
+                                background: #f5f5f5 url('../img/night.png');
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: 17px;
+                            }
+                        }
+                    }
+                    .db-chat{
+                        img{
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+                    .db-notification{
+                        img{
+                            filter: brightness(0) invert(1);
+                        }
+                        .dropdown-menu{
+                            background-color: var(--codColor);
+                            ul{
+                                li{
+                                    border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
+                                }
+                            }
+                        }
+                        a{
+                            &:hover{
+                                color: var(--secondaryColor);    
+                            }
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+    }
+    .db-wrapper .db-main .db-header .db-header-right .db-chat img,
+    .db-wrapper .db-main .db-header .db-header-right .db-notification button img{
+        filter: brightness(0) invert(1);
+    }
+    .db-wrapper .db-main .db-header .db-header-right .language-selector .dropdown,
+    .db-wrapper .db-main .db-header .db-header-right .db-notification .dropdown-menu,
+    .db-wrapper .db-main .db-header .db-header-right .db-user-option .dropdown-menu{
+        background-color: var(--codColor);
+    }
+    .db-wrapper .db-main .db-header .db-header-right .db-user-option .dropdown-menu li a{
+        color: var(--whiteColor);
+        &:hover{
+            color: var(--primaryColor);
+        }
+    }
+    .db-chatbox .db-chat-footer .db-form-group input,
+    .db-wrapper .db-main .db-header .db-header-left .db-searchbox input {
+        color: var(--whiteColor);
+        &::placeholder{
+            color: var(--whiteColor);
+            opacity: 1;
+        }
+    }
+    .db-wrapper .db-main .db-header .db-header-left .db-searchbox button {
+        background-color: var(--secondaryColor)!important;
+    }
+    .db-activity-card{
+        h3,span,
+        p{
+            color: #333!important;
+        }
+    }
+    .db-action-btn .dropdown-menu{
+        background-color: var(--titleColor);
+        a,button{
+            color: var(--whiteColor);
+            &:hover{
+                color: var(--secondaryColor);
+                background-color: transparent!important;
+            }
+        }
+    }
+    .db-pagination li a {
+        color: var(--whiteColor);
+        background-color: rgba(255, 255, 255, 0.25);
+        &:hover,
+        &.active{
+            background-color: var(--primaryColor);
+            color: var(--whiteColor);
+        }
+    }
+    .notification-text {
+        padding-left: 40px;
+        i{
+            left: 12px;
+        }
+    }
+    select{
+        &:focus{
+            outline: 0;
+        }
+        option{
+            background-color: var(--titleColor);
+        }
+    }
+    .tb-btn{
+        &.style-three{
+            background-color: #333;
+            &:hover{
+                background-color: var(--primaryColor);
+                color: var(--whiteColor);
+            }
+        }
+    }
+    .db-wrapper .db-main .db-content-wrapper .db-breadcrumb-menu li a {
+        color: var(--whiteColor);
+        &:hover{
+            color: var(--primaryColor);
+        }
+    }
+    .db-wrapper .db-main .db-content-wrapper .db-breadcrumb-menu li:after,
+    .db-wrapper .db-main .db-content-wrapper .db-breadcrumb-menu li {
+        color: var(--offwhiteColor);
+    }
+    .db-table {
+        table{
+            tr{
+                th,td{
+                    background-color: var(--mildColor)!important;
+                    color: var(--whiteColor);
+                    &.text-title{
+                        color: var(--whiteColor);
+                    }
+                }
+                th{
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+
+                }
+                td{
+                    border-color: rgba(255, 255, 255, 0.17);
+                }
+            }
+        }
+    }
+    .db-form-group input,
+    .select_input input {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: var(--whiteColor);
+        &::placeholder{
+            color: var(--whiteColor);
+            opacity: 1;
+        }
+    }
+    .db-doctor-card {
+        border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .db-activity-card{
+        &.style-three{
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        &.style-four,
+        &.style-three{
+            h3,span,p{
+                color: var(--whiteColor)!important;
+            }
+            p{
+                span{
+                    &.bg-green,
+                    &.bg-red{
+                        color: var(--titleColor)!important;
+                    }
+                }
+            }
+        }
+    }
+    .db-roles-tab  {
+        button{
+            background-color: var(--primaryColor)!important;
+        }
+        li{
+            border-color: rgba(255, 255, 255, 0.10);
+        }
+    }
+    .db-chatbox .db-chat-body .db-chat-sender .db-chat-details-wrap .db-chat-details p {
+        background-color: var(--secondaryColor);
+    }
+    .db-chatbox .db-chatbox-header .db-chat-action-btn .dropdown-toggle img, .db-chatbox .db-chatbox-header .db-chat-action-btn .video-call-btn img, .db-chatbox .db-chatbox-header .db-chat-action-btn .phone-call-btn img {
+        filter: brightness(0) invert(1);
+    }
+    .db-chatbox-sidebar .db-chat-item-wrapper .nav-item .db-chat-item {
+        background-color: transparent;
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+    .db-wrapper .db-main .db-header .db-header-left .db-searchbox input,
+    .db-chatbox-sidebar .db-searchbox input {
+       &::placeholder{
+        color: var(--whiteColor)!important;
+        opacity: 1;
+       }
+    }
+    
+}
+@media only screen and (max-width:991px) {
+    .switch-theme-mode {
+        top: 270px;
+        right: 0;
+    }
+    .theme-dark{
+        .menu{
+            background-color: var(--aztechColor);
+        }
+    }
+}
