@@ -1,4 +1,23 @@
-
+.zoom-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0d6efd;
+    animation: zoomInOut 2s infinite ease-in-out;
+  }
+  
+  @keyframes zoomInOut {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+.consult-fee-main {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+  }
   .top-header, .main-header {
     background-color: #ffffff;
     padding: 10px 15px;
