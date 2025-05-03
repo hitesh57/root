@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Clinic Header & Cards</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Top Header -->
+  <div class="container-fluid top-header">
+    <div class="row align-items-center">
+      <div class="col-4 d-flex gap-2">
+        <img src="https://via.placeholder.com/40x40?text=Img1" alt="Img1">
+        <img src="https://via.placeholder.com/40x40?text=Img2" alt="Img2">
+      </div>
+      <div class="col-4 text-center">
+        <div class="consult-text">Consulting Fee ₹200</div>
+      </div>
+      <div class="col-4 translator-text">🌐 Translator</div>
+    </div>
+  </div>
+
+  <!-- Logo + Consulting Fee -->
+  <div class="container-fluid main-header">
+    <div class="row align-items-center">
+      <div class="col-6 logo-text">LOGO</div>
+      <div class="col-6 consult-fee-main">Consulting Fee ₹200</div>
+    </div>
+  </div>
+
+  <!-- Click to Call -->
+  <div class="container-fluid call-section">
+    <a href="tel:+919876543210" class="call-link">📞 +91 98765 43210</a>
+    <a href="tel:+918765432109" class="call-link">📞 +91 87654 32109</a>
+  </div>
+
+
+
+  <div class="container">
+                <div class="metadata-title">
+                    <i class="fas fa-info-circle"></i>
+                    Image Metadata
+                </div>
+                <div class="metadata-grid" id="metadataGrid">
+                    <div class="metadata-item">
+                        <div class="metadata-label">
+                            <i class="fas fa-file-alt"></i>
+                            File Name
+                        </div>
+                        <div class="metadata-value" id="fileName">-</div>
+                    </div>
+                    <div class="metadata-item">
+                        <div class="metadata-label">
+                            <i class="fas fa-weight-hanging"></i>
+                            File Size
+                        </div>
+                        <div class="metadata-value" id="fileSize">-</div>
+                    </div>
+                    <div class="metadata-item">
+                        <div class="metadata-label">
+                            <i class="fas fa-file-image"></i>
+                            File Type
+                        </div>
+                        <div class="metadata-value" id="fileType">-</div>
+                    </div>
+                    <div class="metadata-item">
+                        <div class="metadata-label">
+                            <i class="fas fa-expand"></i>
+                            Dimensions
+                        </div>
+                        <div class="metadata-value" id="dimensions">-</div>
+                    </div>
+                    <div class="metadata-item">
+                        <div class="metadata-label">
+                            <i class="fas fa-palette"></i>
+                            Color Space
+                        </div>
+                        <div class="metadata-value" id="colorSpace">-</div>
+                    </div>
+                    <div class="metadata-item">
+                        <div class="metadata-label">
+                            <i class="far fa-calendar-plus"></i>
+                            Created
+                        </div>
+                        <div class="metadata-value" id="createdDate">-</div>
+                    </div>
+                    <div class="metadata-item">
+                        <div class="metadata-label">
+                            <i class="fas fa-calendar-alt"></i>
+                            Modified
+                        </div>
+                        <div class="metadata-value" id="modifiedDate">-</div>
+                    </div>
+                    <div class="metadata-item">
+                        <div class="metadata-label">
+                            <i class="fas fa-camera"></i>
+                            Camera Info
+                        </div>
+                        <div class="metadata-value" id="cameraInfo">-</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="batch-container" id="batchContainer">
+                <div class="metadata-title">
+                    <i class="fas fa-layer-group"></i>
+                    Batch Processing
+                </div>
+                <div class="batch-list" id="batchList">
+                    <!-- Batch items will be added here dynamically -->
+                </div>
+                <div class="batch-actions">
+                    <button class="batch-btn batch-btn-secondary" id="batchClearBtn">
+                        <i class="fas fa-trash"></i>
+                        Clear All
+                    </button>
+                    <button class="batch-btn batch-btn-primary" id="batchProcessBtn">
+                        <i class="fas fa-cogs"></i>
+                        Process All
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="operations-container">
+        <div class="operations-title">
+            <i class="fas fa-sliders-h"></i>
+            Advanced Image Operations
+        </div>
+        
+        <div class="operations-grid">
+            <div class="operation-btn" data-operation="compress">
+                <div class="operation-icon">
+                    <i class="fas fa-compress-alt"></i>
+                </div>
+                <div class="operation-name">Smart Compress</div>
+                <div class="operation-desc">Reduce file size with AI-powered quality optimization</div>
+            </div>
+            
+            <div class="operation-btn" data-operation="remove-metadata">
+                <div class="operation-icon">
+                    <i class="fas fa-eraser"></i>
+                </div>
+                <div class="operation-name">Remove Metadata</div>
+                <div class="operation-desc">Strip all EXIF, IPTC and sensitive metadata</div>
+            </div>
+            
+            <div class="operation-btn" data-operation="convert-jpeg">
+                <div class="operation-icon">
+                    <i class="fas fa-file-image"></i>
+                </div>
+                <div class="operation-name">Convert to JPEG</div>
+                <div class="operation-desc">Save as high-quality JPEG format</div>
+            </div>
+            
+            <div class="operation-btn" data-operation="convert-png">
+                <div class="operation-icon">
+                    <i class="fas fa-file-image"></i>
+                </div>
+                <div class="operation-name">Convert to PNG</div>
+                <div class="operation-desc">Save as lossless PNG format</div>
+            </div>
+            
+            <div class="operation-btn" data-operation="convert-webp">
+                <div class="operation-icon">
+                    <i class="fas fa-file-image"></i>
+                </div>
+                <div class="operation-name">Convert to WebP</div>
+                <div class="operation-desc">Save as modern WebP format</div>
+            </div>
+            
+            <div class="operation-btn" data-operation="resize">
+                <div class="operation-icon">
+                    <i class="fas fa-expand"></i>
+                </div>
+                <div class="operation-name">Resize</div>
+                <div class="operation-desc">Change image dimensions with smart scaling</div>
+            </div>
+            
+            <div class="operation-btn" data-operation="grayscale">
+                <div class="operation-icon">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="operation-name">Grayscale</div>
+                <div class="operation-desc">Convert to black and white</div>
+            </div>
+            
+            <div class="operation-btn" data-operation="rotate">
+                <div class="operation-icon">
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="operation-name">Rotate</div>
+                <div class="operation-desc">Rotate image 90 degrees clockwise</div>
+            </div>
+            
+            <div class="operation-btn" data-operation="enhance">
+                <div class="operation-icon">
+                    <i class="fas fa-magic"></i>
+                </div>
+                <div class="operation-name">AI Enhance</div>
+                <div class="operation-desc">Automatically improve quality with AI</div>
+            </div>
+            
+            <div class="operation-btn" data-operation="background-remove">
+                <div class="operation-icon">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <div class="operation-name">Remove Background</div>
+                <div class="operation-desc">AI-powered background removal</div>
+            </div>
+            
+            <div class="operation-btn" data-operation="watermark">
+                <div class="operation-icon">
+                    <i class="fas fa-stamp"></i>
+                </div>
+                <div class="operation-name">Add Watermark</div>
+                <div class="operation-desc">Protect your images with watermark</div>
+            </div>
+            
+            <div class="operation-btn" data-operation="filter">
+                <div class="operation-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <div class="operation-name">Apply Filter</div>
+                <div class="operation-desc">Stylize with artistic filters</div>
+            </div>
+        </div>
+        
+        <!-- Compression Controls -->
+        <div class="advanced-controls" id="compressionControls">
+            <div class="control-group">
+                <label class="control-label">
+                    <i class="fas fa-compress-arrows-alt"></i>
+                    Compression Quality
+                </label>
+                <div class="slider-container">
+                    <input type="range" min="1" max="100" value="80" class="range-slider" id="compressionSlider">
+                    <span class="slider-value" id="compressionValue">80</span>%
+                </div>
+                <div class="text-center mt-1">
+                    <small class="text-muted">Higher value = better quality, larger file</small>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    <i class="fas fa-bolt"></i>
+                    Optimization Method
+                </label>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="compressionMethod" value="balanced" checked>
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Balanced</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="compressionMethod" value="size">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Smallest Size</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="compressionMethod" value="quality">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Best Quality</span>
+                    </label>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    <i class="fas fa-eye"></i>
+                    Show Comparison
+                </label>
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="showComparison">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Enable before/after slider</span>
+                    </label>
+                </div>
+            </div>
+            <div class="control-group mt-3">
+                <button class="upload-btn" id="applyCompressionBtn">
+                    <i class="fas fa-check"></i>
+                    Apply Compression
+                </button>
+            </div>
+        </div>
+        
+        <!-- Resize Controls -->
+        <div class="advanced-controls" id="resizeControls">
+            <div class="control-group">
+                <label class="control-label">
+                    <i class="fas fa-ruler-horizontal"></i>
+                    Width (px)
+                </label>
+                <input type="number" class="custom-select" id="resizeWidth" placeholder="Auto">
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    <i class="fas fa-ruler-vertical"></i>
+                    Height (px)
+                </label>
+                <input type="number" class="custom-select" id="resizeHeight" placeholder="Auto">
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    <i class="fas fa-expand"></i>
+                    Maintain Aspect Ratio
+                </label>
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="maintainAspect" checked>
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Keep original proportions</span>
+                    </label>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    <i class="fas fa-magic"></i>
+                    Resize Method
+                </label>
+                <div class="select-wrapper">
+                    <select class="custom-select" id="resizeMethod">
+                        <option value="lanczos">Lanczos (best quality)</option>
+                        <option value="bicubic">Bicubic (balanced)</option>
+                        <option value="bilinear">Bilinear (fastest)</option>
+                        <option value="nearest">Nearest Neighbor (pixel art)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group mt-3">
+                <button class="upload-btn" id="applyResizeBtn">
+                    <i class="fas fa-check"></i>
+                    Apply Resize
+                </button>
+            </div>
+        </div>
+        
+        <!-- Watermark Controls -->
+        <div class="advanced-controls" id="watermarkControls">
+            <div class="control-group">
+                <label class="control-label">
+                    <i class="fas fa-font"></i>
+                    Text Watermark
+                </label>
+                <input type="text" class="custom-select" id="watermarkText" placeholder="Your watermark text">
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    <i class="fas fa-palette"></i>
+                    Text Color
+                </label>
+                <input type="color" class="custom-select" id="watermarkColor" value="#FFFFFF">
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    <i class="fas fa-tint"></i>
+                    Opacity
+                </label>
+                <div class="slider-container">
+                    <input type="range" min="10" max="100" value="50" class="range-slider" id="watermarkOpacity">
+                    <span class="slider-value" id="watermarkOpacityValue">50</span>%
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    <i class="fas fa-text-height"></i>
+                    Font Size
+                </label>
+                <div class="slider-container">
+                    <input type="range" min="10" max="72" value="24" class="range-slider" id="watermarkSize">
+                    <span class="slider-value" id="watermarkSizeValue">24</span>px
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    <i class="fas fa-layer-group"></i>
+                    Position
+                </label>
+                <div class="select-wrapper">
+                    <select class="custom-select" id="watermarkPosition">
+                        <option value="bottom-right">Bottom Right</option>
+                        <option value="bottom-left">Bottom Left</option>
+                        <option value="top-right">Top Right</option>
+                        <option value="top-left">Top Left</option>
+                        <option value="center">Center</option>
+                        <option value="tiled">Tiled</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group mt-3">
+                <button class="upload-btn" id="applyWatermarkBtn">
+                    <i class="fas fa-check"></i>
+                    Apply Watermark
+                </button>
+            </div>
+        </div>
+        
+        <!-- Filter Controls -->
+        <div class="advanced-controls" id="filterControls">
+            <div class="control-group">
+                <label class="control-label">
+                    <i class="fas fa-filter"></i>
+                    Filter Presets
+                </label>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="filterType" value="none" checked>
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">None</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="filterType" value="vintage">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Vintage</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="filterType" value="blackwhite">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Black & White</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="filterType" value="sepia">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Sepia</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="filterType" value="cool">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Cool</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="filterType" value="warm">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Warm</span>
+                    </label>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    <i class="fas fa-sliders-h"></i>
+                    Custom Adjustments
+                </label>
+                <div class="slider-container">
+                    <span>Brightness</span>
+                    <input type="range" min="-100" max="100" value="0" class="range-slider" id="brightnessSlider">
+                    <span class="slider-value" id="brightnessValue">0</span>%
+                </div>
+                <div class="slider-container mt-2">
+                    <span>Contrast</span>
+                    <input type="range" min="-100" max="100" value="0" class="range-slider" id="contrastSlider">
+                    <span class="slider-value" id="contrastValue">0</span>%
+                </div>
+                <div class="slider-container mt-2">
+                    <span>Saturation</span>
+                    <input type="range" min="-100" max="100" value="0" class="range-slider" id="saturationSlider">
+                    <span class="slider-value" id="saturationValue">0</span>%
+                </div>
+            </div>
+            <div class="control-group mt-3">
+                <button class="upload-btn" id="applyFilterBtn">
+                    <i class="fas fa-check"></i>
+                    Apply Filter
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="download-section">
+        <button class="download-btn" id="downloadBtn">
+            <i class="fas fa-download"></i>
+            Download Processed Image
+        </button>
+    </div>
+</div>
+
+<div class="loading-overlay" id="loadingOverlay">
+    <div class="spinner"></div>
+    <div class="loading-text">Processing your image with AI...</div>
+    <div class="ai-processing">
+        <i class="fas fa-brain"></i>
+        AI Processing
+    </div>
+    <div class="progress-text" id="progressText">Initializing...</div>
+</div>
+
+<div class="toast" id="toast">
+    <div class="toast-icon">
+        <i class="fas fa-check-circle"></i>
+    </div>
+    <div class="toast-message">Operation completed successfully!</div>
+    <button class="toast-close">
+        <i class="fas fa-times"></i>
+    </button>
+    <div class="progress-bar">
+        <div class="progress" id="toastProgress"></div>
+    </div>
+</div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Main Application Architecture: Stage → Scene → Scene Graph
+    class PhotoProcessor {
+        constructor() {
+            this.stage = {
+                init: this.init.bind(this),
+                scenes: {
+                    upload: new UploadScene(),
+                    metadata: new MetadataScene(),
+                    operations: new OperationsScene(),
+                    download: new DownloadScene(),
+                    batch: new BatchScene()
+                },
+                utils: new AppUtils()
+            };
+            
+            this.currentFile = null;
+            this.originalFile = null;
+            this.processedBlob = null;
+            this.metadata = {};
+            this.batchFiles = [];
+            this.batchProcessing = false;
+            this.currentOperation = null;
+            this.operationsQueue = [];
+        }
+        
+        init() {
+            this.stage.scenes.upload.init(this);
+            this.stage.scenes.metadata.init(this);
+            this.stage.scenes.operations.init(this);
+            this.stage.scenes.download.init(this);
+            this.stage.scenes.batch.init(this);
+            this.stage.utils.init(this);
+            
+            // Initialize any additional components
+            this.initComparisonSlider();
+        }
+        
+        initComparisonSlider() {
+            const slider = document.getElementById('comparisonSlider');
+            const container = document.getElementById('comparisonContainer');
+            let isDragging = false;
+            
+            const moveSlider = (e) => {
+                if (!isDragging) return;
+                
+                const containerRect = container.getBoundingClientRect();
+                let x = e.clientX - containerRect.left;
+                
+                if (e.type === 'touchmove') {
+                    x = e.touches[0].clientX - containerRect.left;
+                }
+                
+                x = Math.max(0, Math.min(x, containerRect.width));
+                const percent = (x / containerRect.width) * 100;
+                
+                slider.style.left = `${percent}%`;
+                document.getElementById('comparisonBefore').style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
+                document.getElementById('comparisonAfter').style.clipPath = `inset(0 0 0 ${percent}%)`;
+            };
+            
+            slider.addEventListener('mousedown', () => {
+                isDragging = true;
+            });
+            
+            slider.addEventListener('touchstart', () => {
+                isDragging = true;
+            });
+            
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+            });
+            
+            document.addEventListener('touchend', () => {
+                isDragging = false;
+            });
+            
+            document.addEventListener('mousemove', moveSlider);
+            document.addEventListener('touchmove', moveSlider);
+        }
+        
+        processImage(operation, options = {}) {
+            if (!this.currentFile && !this.batchProcessing) {
+                this.stage.utils.showToast('Please upload an image first', true);
+                return;
+            }
+            
+            this.currentOperation = operation;
+            
+            if (this.batchProcessing) {
+                this.processBatch(operation, options);
+                return;
+            }
+            
+            this.showLoading(true);
+            
+            // Simulate processing delay with progress updates
+            let progress = 0;
+            const progressInterval = setInterval(() => {
+                progress += 5 + Math.random() * 10;
+                if (progress > 90) progress = 90;
+                this.updateProgress(progress, `Applying ${operation.replace('-', ' ')}...`);
+            }, 300);
+            
+            setTimeout(() => {
+                clearInterval(progressInterval);
+                this.performOperation(operation, options);
+                this.updateProgress(100, 'Operation complete!');
+                setTimeout(() => {
+                    this.showLoading(false);
+                    this.stage.utils.showToast(`Operation ${operation.replace('-', ' ')} completed successfully!`);
+                }, 500);
+            }, 2000 + Math.random() * 1000);
+        }
+        
+        async performOperation(operation, options) {
+            if (!this.currentFile && !this.batchProcessing) return;
+            
+            const file = this.batchProcessing ? this.batchFiles[this.currentBatchIndex].file : this.currentFile;
+            const reader = new FileReader();
+            
+            reader.onload = async (e) => {
+                const img = new Image();
+                img.onload = async () => {
+                    const canvas = document.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    
+                    // Apply operations
+                    switch (operation) {
+                        case 'compress':
+                            canvas.width = img.width;
+                            canvas.height = img.height;
+                            ctx.drawImage(img, 0, 0);
+                            this.processedBlob = await this.canvasToBlob(
+                                canvas, 
+                                'image/jpeg', 
+                                options.quality / 100
+                            );
+                            break;
+                            
+                        case 'remove-metadata':
+                            canvas.width = img.width;
+                            canvas.height = img.height;
+                            ctx.drawImage(img, 0, 0);
+                            this.processedBlob = await this.canvasToBlob(canvas, file.type);
+                            this.metadata = {}; // Clear metadata
+                            break;
+                            
+                        case 'convert-jpeg':
+                            canvas.width = img.width;
+                            canvas.height = img.height;
+                            ctx.drawImage(img, 0, 0);
+                            this.processedBlob = await this.canvasToBlob(canvas, 'image/jpeg');
+                            break;
+                            
+                        case 'convert-png':
+                            canvas.width = img.width;
+                            canvas.height = img.height;
+                            ctx.drawImage(img, 0, 0);
+                            this.processedBlob = await this.canvasToBlob(canvas, 'image/png');
+                            break;
+                            
+                        case 'convert-webp':
+                            canvas.width = img.width;
+                            canvas.height = img.height;
+                            ctx.drawImage(img, 0, 0);
+                            this.processedBlob = await this.canvasToBlob(canvas, 'image/webp');
+                            break;
+                            
+                        case 'resize':
+                            let newWidth = options.width || img.width;
+                            let newHeight = options.height || img.height;
+                            
+                            if (options.maintainAspect) {
+                                const aspectRatio = img.width / img.height;
+                                if (newWidth && !newHeight) {
+                                    newHeight = newWidth / aspectRatio;
+                                } else if (newHeight && !newWidth) {
+                                    newWidth = newHeight * aspectRatio;
+                                }
+                            }
+                            
+                            canvas.width = newWidth;
+                            canvas.height = newHeight;
+                            
+                            // Apply different resize methods
+                            if (options.method === 'lanczos') {
+                                // High-quality Lanczos resampling
+                                ctx.imageSmoothingEnabled = true;
+                                ctx.imageSmoothingQuality = 'high';
+                            } else if (options.method === 'nearest') {
+                                ctx.imageSmoothingEnabled = false;
+                            }
+                            
+                            ctx.drawImage(img, 0, 0, newWidth, newHeight);
+                            this.processedBlob = await this.canvasToBlob(canvas, file.type);
+                            break;
+                            
+                        case 'grayscale':
+                            canvas.width = img.width;
+                            canvas.height = img.height;
+                            ctx.drawImage(img, 0, 0);
+                            const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                            const data = imageData.data;
+                            for (let i = 0; i < data.length; i += 4) {
+                                const avg = (data[i] * 0.3 + data[i + 1] * 0.59 + data[i + 2] * 0.11);
+                                data[i] = avg; // red
+                                data[i + 1] = avg; // green
+                                data[i + 2] = avg; // blue
+                            }
+                            ctx.putImageData(imageData, 0, 0);
+                            this.processedBlob = await this.canvasToBlob(canvas, file.type);
+                            break;
+                            
+                        case 'rotate':
+                            canvas.width = img.height;
+                            canvas.height = img.width;
+                            ctx.translate(canvas.width / 2, canvas.height / 2);
+                            ctx.rotate(Math.PI / 2);
+                            ctx.drawImage(img, -img.width / 2, -img.height / 2);
+                            this.processedBlob = await this.canvasToBlob(canvas, file.type);
+                            break;
+                            
+                        case 'enhance':
+                            // Simulate AI enhancement
+                            canvas.width = img.width;
+                            canvas.height = img.height;
+                            ctx.drawImage(img, 0, 0);
+                            
+                            // Apply some "enhancement" effects
+                            const enhanceData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                            const eData = enhanceData.data;
+                            
+                            // Simple contrast and sharpening simulation
+                            for (let i = 0; i < eData.length; i += 4) {
+                                // Contrast adjustment
+                                const factor = 1.2;
+                                eData[i] = 128 + (eData[i] - 128) * factor;
+                                eData[i + 1] = 128 + (eData[i + 1] - 128) * factor;
+                                eData[i + 2] = 128 + (eData[i + 2] - 128) * factor;
+                                
+                                // Mild sharpening
+                                if (i > 0 && i < eData.length - 4) {
+                                    eData[i] = Math.min(255, eData[i] * 1.05);
+                                    eData[i + 1] = Math.min(255, eData[i + 1] * 1.05);
+                                    eData[i + 2] = Math.min(255, eData[i + 2] * 1.05);
+                                }
+                            }
+                            
+                            ctx.putImageData(enhanceData, 0, 0);
+                            this.processedBlob = await this.canvasToBlob(canvas, file.type);
+                            break;
+                            
+                        case 'background-remove':
+                            // Simulate background removal with a simple color-based approach
+                            canvas.width = img.width;
+                            canvas.height = img.height;
+                            ctx.drawImage(img, 0, 0);
+                            
+                            const bgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                            const bgPixels = bgData.data;
+                            const tolerance = 40;
+                            
+                            // Get the corner colors as background sample
+                            const corners = [
+                                [0, 0], [0, canvas.height - 1], 
+                                [canvas.width - 1, 0], [canvas.width - 1, canvas.height - 1]
+                            ];
+                            
+                            const bgColors = corners.map(pos => {
+                                const i = (pos[1] * canvas.width + pos[0]) * 4;
+                                return [bgPixels[i], bgPixels[i + 1], bgPixels[i + 2]];
+                            });
+                            
+                            // Remove background
+                            for (let i = 0; i < bgPixels.length; i += 4) {
+                                const r = bgPixels[i];
+                                const g = bgPixels[i + 1];
+                                const b = bgPixels[i + 2];
+                                
+                                // Check if pixel matches any corner color
+                                const isBackground = bgColors.some(color => {
+                                    return Math.abs(r - color[0]) < tolerance &&
+                                           Math.abs(g - color[1]) < tolerance &&
+                                           Math.abs(b - color[2]) < tolerance;
+                                });
+                                
+                                if (isBackground) {
+                                    bgPixels[i + 3] = 0; // Set alpha to transparent
+                                }
+                            }
+                            
+                            ctx.putImageData(bgData, 0, 0);
+                            this.processedBlob = await this.canvasToBlob(canvas, 'image/png');
+                            break;
+                            
+                        case 'watermark':
+                            canvas.width = img.width;
+                            canvas.height = img.height;
+                            ctx.drawImage(img, 0, 0);
+                            
+                            // Add watermark text
+                            const text = options.text || "Watermark";
+                            const fontSize = options.size || 24;
+                            const opacity = options.opacity / 100 || 0.5;
+                            const color = options.color || "#FFFFFF";
+                            
+                            ctx.font = `bold ${fontSize}px Arial`;
+                            ctx.fillStyle = color;
+                            ctx.globalAlpha = opacity;
+                            ctx.textAlign = 'center';
+                            ctx.textBaseline = 'middle';
+                            
+                            // Position watermark
+                            let x, y;
+                            switch (options.position) {
+                                case 'bottom-right':
+                                    x = canvas.width - 20;
+                                    y = canvas.height - 20;
+                                    ctx.textAlign = 'right';
+                                    ctx.textBaseline = 'bottom';
+                                    break;
+                                case 'bottom-left':
+                                    x = 20;
+                                    y = canvas.height - 20;
+                                    ctx.textAlign = 'left';
+                                    ctx.textBaseline = 'bottom';
+                                    break;
+                                case 'top-right':
+                                    x = canvas.width - 20;
+                                    y = 20;
+                                    ctx.textAlign = 'right';
+                                    ctx.textBaseline = 'top';
+                                    break;
+                                case 'top-left':
+                                    x = 20;
+                                    y = 20;
+                                    ctx.textAlign = 'left';
+                                    ctx.textBaseline = 'top';
+                                    break;
+                                case 'tiled':
+                                    // Add tiled watermark
+                                    const stepX = canvas.width / 3;
+                                    const stepY = canvas.height / 3;
+                                    
+                                    for (let i = stepX / 2; i < canvas.width; i += stepX) {
+                                        for (let j = stepY / 2; j < canvas.height; j += stepY) {
+                                            ctx.save();
+                                            ctx.translate(i, j);
+                                            ctx.rotate(-0.2);
+                                            ctx.fillText(text, 0, 0);
+                                            ctx.restore();
+                                        }
+                                    }
+                                    break;
+                                default: // center
+                                    x = canvas.width / 2;
+                                    y = canvas.height / 2;
+                            }
+                            
+                            if (options.position !== 'tiled') {
+                                ctx.save();
+                                ctx.translate(x, y);
+                                ctx.rotate(-0.2);
+                                ctx.fillText(text, 0, 0);
+                                ctx.restore();
+                            }
+                            
+                            ctx.globalAlpha = 1.0;
+                            this.processedBlob = await this.canvasToBlob(canvas, file.type);
+                            break;
+                            
+                        case 'filter':
+                            canvas.width = img.width;
+                            canvas.height = img.height;
+                            ctx.drawImage(img, 0, 0);
+                            const filterData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                            const fData = filterData.data;
+                            
+                            // Apply selected filter
+                            switch (options.filter) {
+                                case 'vintage':
+                                    // Sepia tone with vignette effect
+                                    for (let i = 0; i < fData.length; i += 4) {
+                                        const r = fData[i];
+                                        const g = fData[i + 1];
+                                        const b = fData[i + 2];
+                                        
+                                        fData[i] = Math.min(255, (r * 0.393) + (g * 0.769) + (b * 0.189));
+                                        fData[i + 1] = Math.min(255, (r * 0.349) + (g * 0.686) + (b * 0.168));
+                                        fData[i + 2] = Math.min(255, (r * 0.272) + (g * 0.534) + (b * 0.131));
+                                        
+                                        // Add some noise
+                                        const noise = Math.random() * 20 - 10;
+                                        fData[i] += noise;
+                                        fData[i + 1] += noise;
+                                        fData[i + 2] += noise;
+                                    }
+                                    break;
+                                    
+                                case 'blackwhite':
+                                    // High contrast black and white
+                                    for (let i = 0; i < fData.length; i += 4) {
+                                        const avg = (fData[i] + fData[i + 1] + fData[i + 2]) / 3;
+                                        const bw = avg > 128 ? 255 : 0;
+                                        fData[i] = fData[i + 1] = fData[i + 2] = bw;
+                                    }
+                                    break;
+                                    
+                                case 'sepia':
+                                    // Classic sepia tone
+                                    for (let i = 0; i < fData.length; i += 4) {
+                                        const r = fData[i];
+                                        const g = fData[i + 1];
+                                        const b = fData[i + 2];
+                                        
+                                        fData[i] = Math.min(255, (r * 0.393) + (g * 0.769) + (b * 0.189));
+                                        fData[i + 1] = Math.min(255, (r * 0.349) + (g * 0.686) + (b * 0.168));
+                                        fData[i + 2] = Math.min(255, (r * 0.272) + (g * 0.534) + (b * 0.131));
+                                    }
+                                    break;
+                                    
+                                case 'cool':
+                                    // Cool tone (blue shift)
+                                    for (let i = 0; i < fData.length; i += 4) {
+                                        fData[i] = Math.min(255, fData[i] * 0.9);
+                                        fData[i + 1] = Math.min(255, fData[i + 1] * 0.95);
+                                        fData[i + 2] = Math.min(255, fData[i + 2] * 1.1);
+                                    }
+                                    break;
+                                    
+                                case 'warm':
+                                    // Warm tone (red/yellow shift)
+                                    for (let i = 0; i < fData.length; i += 4) {
+                                        fData[i] = Math.min(255, fData[i] * 1.1);
+                                        fData[i + 1] = Math.min(255, fData[i + 1] * 1.05);
+                                        fData[i + 2] = Math.min(255, fData[i + 2] * 0.9);
+                                    }
+                                    break;
+                            }
+                            
+                            // Apply custom adjustments
+                            if (options.brightness || options.contrast || options.saturation) {
+                                this.applyAdjustments(filterData, options);
+                            }
+                            
+                            ctx.putImageData(filterData, 0, 0);
+                            this.processedBlob = await this.canvasToBlob(canvas, file.type);
+                            break;
+                    }
+                    
+                    // Update preview and metadata
+                    if (!this.batchProcessing) {
+                        this.stage.scenes.metadata.updateMetadata();
+                        this.stage.scenes.download.enableDownload();
+                        
+                        // Update comparison view if enabled
+                        if (document.getElementById('showComparison').checked && this.originalFile) {
+                            this.updateComparisonView();
+                        }
+                    } else {
+                        // For batch processing, save the result
+                        this.batchFiles[this.currentBatchIndex].processedBlob = this.processedBlob;
+                        this.processNextBatchItem();
+                    }
+                };
+                
+                img.src = e.target.result;
+            };
+            
+            reader.readAsDataURL(file);
+        }
+        
+        applyAdjustments(imageData, options) {
+            const data = imageData.data;
+            const brightness = options.brightness || 0; // -100 to 100
+            const contrast = options.contrast || 0;     // -100 to 100
+            const saturation = options.saturation || 0; // -100 to 100
+            
+            // Convert contrast factor (-100..100) to multiplier
+            const contrastFactor = (259 * (contrast + 255)) / (255 * (259 - contrast));
+            
+            for (let i = 0; i < data.length; i += 4) {
+                // Apply brightness
+                if (brightness !== 0) {
+                    data[i] += 255 * (brightness / 100);
+                    data[i + 1] += 255 * (brightness / 100);
+                    data[i + 2] += 255 * (brightness / 100);
+                }
+                
+                // Apply contrast
+                if (contrast !== 0) {
+                    data[i] = contrastFactor * (data[i] - 128) + 128;
+                    data[i + 1] = contrastFactor * (data[i + 1] - 128) + 128;
+                    data[i + 2] = contrastFactor * (data[i + 2] - 128) + 128;
+                }
+                
+                // Apply saturation
+                if (saturation !== 0) {
+                    const gray = 0.2989 * data[i] + 0.5870 * data[i + 1] + 0.1140 * data[i + 2];
+                    data[i] = gray + (data[i] - gray) * (1 + saturation / 100);
+                    data[i + 1] = gray + (data[i + 1] - gray) * (1 + saturation / 100);
+                    data[i + 2] = gray + (data[i + 2] - gray) * (1 + saturation / 100);
+                }
+                
+                // Clamp values to 0-255
+                data[i] = Math.max(0, Math.min(255, data[i]));
+                data[i + 1] = Math.max(0, Math.min(255, data[i + 1]));
+                data[i + 2] = Math.max(0, Math.min(255, data[i + 2]));
+            }
+        }
+        
+        canvasToBlob(canvas, type, quality) {
+            return new Promise(resolve => {
+                canvas.toBlob(blob => resolve(blob), type, quality);
+            });
+        }
+        
+        showLoading(show, message = '') {
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            const loadingText = document.querySelector('.loading-text');
+            
+            if (show) {
+                loadingText.textContent = message || 'Processing your image with AI...';
+                loadingOverlay.classList.add('active');
+            } else {
+                loadingOverlay.classList.remove('active');
+                this.updateProgress(0, '');
+            }
+        }
+        
+        updateProgress(percent, message) {
+            const progressText = document.getElementById('progressText');
+            progressText.textContent = message;
+            
+            // In a real app, you would update actual progress here
+        }
+        
+        updateComparisonView() {
+            const preview = document.getElementById('imagePreview');
+            const comparisonContainer = document.getElementById('comparisonContainer');
+            const comparisonBefore = document.getElementById('comparisonBefore');
+            const comparisonAfter = document.getElementById('comparisonAfter');
+            
+            if (!this.originalFile || !this.processedBlob) return;
+            
+            // Show original on left, processed on right
+            comparisonBefore.src = URL.createObjectURL(this.originalFile);
+            comparisonAfter.src = URL.createObjectURL(this.processedBlob);
+            
+            preview.classList.add('hidden');
+            comparisonContainer.classList.remove('hidden');
+        }
+        
+        resetComparisonView() {
+            const preview = document.getElementById('imagePreview');
+            const comparisonContainer = document.getElementById('comparisonContainer');
+            
+            preview.classList.remove('hidden');
+            comparisonContainer.classList.add('hidden');
+        }
+        
+        // Batch processing methods
+        addToBatch(file) {
+            this.batchFiles.push({
+                file: file,
+                processedBlob: null
+            });
+            
+            if (this.batchFiles.length === 1) {
+                // First file in batch, set it as current
+                this.setCurrentFile(file);
+            }
+            
+            this.stage.scenes.batch.updateBatchList();
+        }
+        
+        setCurrentFile(file) {
+            this.currentFile = file;
+            this.originalFile = file;
+            this.processedBlob = file;
+            
+            // Display preview
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                document.getElementById('imagePreview').src = e.target.result;
+                document.getElementById('imagePreview').classList.add('loaded');
+                document.querySelector('.placeholder-text').style.display = 'none';
+            };
+            reader.readAsDataURL(file);
+            
+            // Extract and display metadata
+            this.stage.scenes.metadata.extractMetadata(file);
+            
+            // Enable download button
+            this.stage.scenes.download.enableDownload();
+        }
+        
+        processBatch(operation, options) {
+            if (this.batchFiles.length === 0) return;
+            
+            this.batchProcessing = true;
+            this.currentBatchIndex = 0;
+            this.operationsQueue = [];
+            
+            // Initialize all files for processing
+            for (let i = 0; i < this.batchFiles.length; i++) {
+                this.operationsQueue.push({
+                    index: i,
+                    operation: operation,
+                    options: options
+                });
+            }
+            
+            this.showLoading(true, `Processing batch (1/${this.batchFiles.length})...`);
+            this.processNextBatchItem();
+        }
+        
+        processNextBatchItem() {
+            if (this.operationsQueue.length === 0) {
+                // Batch processing complete
+                this.batchProcessing = false;
+                this.showLoading(false);
+                this.stage.utils.showToast(`Batch processing completed! ${this.batchFiles.length} images processed.`);
+                return;
+            }
+            
+            const nextItem = this.operationsQueue.shift();
+            this.currentBatchIndex = nextItem.index;
+            this.currentFile = this.batchFiles[this.currentBatchIndex].file;
+            
+            // Update progress
+            const progress = ((this.batchFiles.length - this.operationsQueue.length) / this.batchFiles.length) * 100;
+            this.updateProgress(
+                progress,
+                `Processing batch (${this.batchFiles.length - this.operationsQueue.length}/${this.batchFiles.length})...`
+            );
+            
+            // Process this item
+            this.performOperation(nextItem.operation, nextItem.options);
+        }
+        
+        clearBatch() {
+            this.batchFiles = [];
+            this.stage.scenes.batch.updateBatchList();
+            
+            if (!this.currentFile) {
+                // Reset preview if no current file
+                document.getElementById('imagePreview').src = '';
+                document.getElementById('imagePreview').classList.remove('loaded');
+                document.querySelector('.placeholder-text').style.display = 'block';
+            }
+        }
+        
+        downloadBatch() {
+            if (this.batchFiles.length === 0) return;
+            
+            // Create a zip file in a real implementation
+            // For demo, we'll download the first processed file or original if not processed
+            const fileToDownload = this.batchFiles[0].processedBlob || this.batchFiles[0].file;
+            this.downloadFile(fileToDownload);
+        }
+        
+        downloadCurrent() {
+            if (!this.processedBlob) return;
+            this.downloadFile(this.processedBlob);
+        }
+        
+        downloadFile(blob) {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            
+            // Determine filename
+            let filename = 'processed_image';
+            if (this.currentFile) {
+                const originalName = this.currentFile.name.split('.')[0];
+                const extension = blob.type.split('/')[1] || 'bin';
+                filename = `${originalName}_processed.${extension}`;
+            }
+            
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            this.stage.utils.showToast('Download started!');
+        }
+    }
+    
+    // Scene classes
+    class UploadScene {
+        init(processor) {
+            this.processor = processor;
+            this.dropZone = document.getElementById('dropZone');
+            this.fileInput = document.getElementById('fileInput');
+            this.uploadBtn = document.getElementById('uploadBtn');
+            this.imagePreview = document.getElementById('imagePreview');
+            this.placeholderText = document.querySelector('.placeholder-text');
+            this.batchContainer = document.getElementById('batchContainer');
+            
+            this.setupEventListeners();
+        }
+        
+        setupEventListeners() {
+            this.uploadBtn.addEventListener('click', () => this.fileInput.click());
+            
+            this.fileInput.addEventListener('change', (e) => {
+                if (e.target.files.length) {
+                    if (e.target.files.length > 1) {
+                        this.handleBatchUpload(Array.from(e.target.files));
+                    } else {
+                        this.handleFileUpload(e.target.files[0]);
+                    }
+                }
+            });
+            
+            // Drag and drop events
+            this.dropZone.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                this.dropZone.classList.add('active');
+            });
+            
+            this.dropZone.addEventListener('dragleave', () => {
+                this.dropZone.classList.remove('active');
+            });
+            
+            this.dropZone.addEventListener('drop', (e) => {
+                e.preventDefault();
+                this.dropZone.classList.remove('active');
+                
+                if (e.dataTransfer.files.length) {
+                    if (e.dataTransfer.files.length > 1) {
+                        this.handleBatchUpload(Array.from(e.dataTransfer.files));
+                    } else {
+                        this.handleFileUpload(e.dataTransfer.files[0]);
+                    }
+                }
+            });
+        }
+        
+        handleFileUpload(file) {
+            if (!file.type.match('image.*')) {
+                this.processor.stage.utils.showToast('Please upload an image file', true);
+                return;
+            }
+            
+            this.processor.setCurrentFile(file);
+            this.batchContainer.classList.remove('visible');
+        }
+        
+        handleBatchUpload(files) {
+            const imageFiles = files.filter(file => file.type.match('image.*'));
+            
+            if (imageFiles.length === 0) {
+                this.processor.stage.utils.showToast('Please upload image files', true);
+                return;
+            }
+            
+            // Add all files to batch
+            imageFiles.forEach(file => {
+                this.processor.addToBatch(file);
+            });
+            
+            // Show batch container
+            this.batchContainer.classList.add('visible');
+            
+            this.processor.stage.utils.showToast(`${imageFiles.length} images added to batch`, false, 'info');
+        }
+    }
+    
+    class MetadataScene {
+        init(processor) {
+            this.processor = processor;
+            this.metadataElements = {
+                fileName: document.getElementById('fileName'),
+                fileSize: document.getElementById('fileSize'),
+                fileType: document.getElementById('fileType'),
+                dimensions: document.getElementById('dimensions'),
+                colorSpace: document.getElementById('colorSpace'),
+                createdDate: document.getElementById('createdDate'),
+                modifiedDate: document.getElementById('modifiedDate'),
+                cameraInfo: document.getElementById('cameraInfo')
+            };
+        }
+        
+        extractMetadata(file) {
+            // Basic metadata
+            this.metadataElements.fileName.textContent = file.name;
+            this.metadataElements.fileSize.textContent = this.formatFileSize(file.size);
+            this.metadataElements.fileType.textContent = file.type || 'Unknown';
+            this.metadataElements.createdDate.textContent = new Date(file.lastModified).toLocaleString();
+            this.metadataElements.modifiedDate.textContent = new Date(file.lastModified).toLocaleString();
+            
+            // Extract image dimensions
+            const img = new Image();
+            img.onload = () => {
+                this.metadataElements.dimensions.textContent = `${img.width} × ${img.height} px`;
+                this.processor.metadata.width = img.width;
+                this.processor.metadata.height = img.height;
+            };
+            img.src = URL.createObjectURL(file);
+            
+            // For a real app, you would use EXIF.js or similar to extract more metadata
+            this.metadataElements.colorSpace.textContent = 'RGB';
+            this.metadataElements.cameraInfo.textContent = 'Not extracted (demo)';
+            
+            this.processor.metadata = {
+                ...this.processor.metadata,
+                name: file.name,
+                size: file.size,
+                type: file.type,
+                lastModified: file.lastModified
+            };
+        }
+        
+        updateMetadata() {
+            if (!this.processor.processedBlob) return;
+            
+            const file = this.processor.processedBlob;
+            this.metadataElements.fileSize.textContent = this.formatFileSize(file.size);
+            this.metadataElements.fileType.textContent = file.type || 'Unknown';
+            
+            // Update dimensions if they changed (e.g., after resize)
+            const img = new Image();
+            img.onload = () => {
+                this.metadataElements.dimensions.textContent = `${img.width} × ${img.height} px`;
+                this.processor.metadata.width = img.width;
+                this.processor.metadata.height = img.height;
+            };
+            img.src = URL.createObjectURL(file);
+        }
+        
+        formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+    }
+    
+    class OperationsScene {
+        init(processor) {
+            this.processor = processor;
+            this.operationBtns = document.querySelectorAll('.operation-btn');
+            this.compressionControls = document.getElementById('compressionControls');
+            this.resizeControls = document.getElementById('resizeControls');
+            this.watermarkControls = document.getElementById('watermarkControls');
+            this.filterControls = document.getElementById('filterControls');
+            
+            // Compression controls
+            this.compressionSlider = document.getElementById('compressionSlider');
+            this.compressionValue = document.getElementById('compressionValue');
+            this.applyCompressionBtn = document.getElementById('applyCompressionBtn');
+            this.showComparison = document.getElementById('showComparison');
+            
+            // Resize controls
+            this.resizeWidth = document.getElementById('resizeWidth');
+            this.resizeHeight = document.getElementById('resizeHeight');
+            this.maintainAspect = document.getElementById('maintainAspect');
+            this.resizeMethod = document.getElementById('resizeMethod');
+            this.applyResizeBtn = document.getElementById('applyResizeBtn');
+            
+            // Watermark controls
+            this.watermarkText = document.getElementById('watermarkText');
+            this.watermarkColor = document.getElementById('watermarkColor');
+            this.watermarkOpacity = document.getElementById('watermarkOpacity');
+            this.watermarkOpacityValue = document.getElementById('watermarkOpacityValue');
+            this.watermarkSize = document.getElementById('watermarkSize');
+            this.watermarkSizeValue = document.getElementById('watermarkSizeValue');
+            this.watermarkPosition = document.getElementById('watermarkPosition');
+            this.applyWatermarkBtn = document.getElementById('applyWatermarkBtn');
+            
+            // Filter controls
+            this.brightnessSlider = document.getElementById('brightnessSlider');
+            this.brightnessValue = document.getElementById('brightnessValue');
+            this.contrastSlider = document.getElementById('contrastSlider');
+            this.contrastValue = document.getElementById('contrastValue');
+            this.saturationSlider = document.getElementById('saturationSlider');
+            this.saturationValue = document.getElementById('saturationValue');
+            this.applyFilterBtn = document.getElementById('applyFilterBtn');
+            
+            this.setupEventListeners();
+        }
+        
+        setupEventListeners() {
+            // Operation buttons
+            this.operationBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const operation = btn.dataset.operation;
+                    
+                    // Hide all controls first
+                    this.hideAllControls();
+                    
+                    if (operation === 'compress') {
+                        this.compressionControls.classList.add('visible');
+                        return;
+                    }
+                    
+                    if (operation === 'resize') {
+                        this.resizeControls.classList.add('visible');
+                        return;
+                    }
+                    
+                    if (operation === 'watermark') {
+                        this.watermarkControls.classList.add('visible');
+                        return;
+                    }
+                    
+                    if (operation === 'filter') {
+                        this.filterControls.classList.add('visible');
+                        return;
+                    }
+                    
+                    // For operations without advanced controls
+                    this.processor.processImage(operation);
+                });
+            });
+            
+            // Compression controls
+            this.compressionSlider.addEventListener('input', () => {
+                this.compressionValue.textContent = this.compressionSlider.value;
+            });
+            
+            this.applyCompressionBtn.addEventListener('click', () => {
+                const quality = parseInt(this.compressionSlider.value);
+                const method = document.querySelector('input[name="compressionMethod"]:checked').value;
+                const showCompare = this.showComparison.checked;
+                
+                this.processor.processImage('compress', {
+                    quality: quality,
+                    method: method,
+                    showCompare: showCompare
+                });
+            });
+            
+            // Resize controls
+            this.resizeWidth.addEventListener('input', () => {
+                if (this.maintainAspect.checked && this.processor.metadata.width && this.processor.metadata.height) {
+                    const aspectRatio = this.processor.metadata.width / this.processor.metadata.height;
+                    this.resizeHeight.value = Math.round(this.resizeWidth.value / aspectRatio);
+                }
+            });
+            
+            this.resizeHeight.addEventListener('input', () => {
+                if (this.maintainAspect.checked && this.processor.metadata.width && this.processor.metadata.height) {
+                    const aspectRatio = this.processor.metadata.width / this.processor.metadata.height;
+                    this.resizeWidth.value = Math.round(this.resizeHeight.value * aspectRatio);
+                }
+            });
+            
+            this.applyResizeBtn.addEventListener('click', () => {
+                const width = this.resizeWidth.value ? parseInt(this.resizeWidth.value) : null;
+                const height = this.resizeHeight.value ? parseInt(this.resizeHeight.value) : null;
+                const method = this.resizeMethod.value;
+                const maintainAspect = this.maintainAspect.checked;
+                
+                if (!width && !height) {
+                    this.processor.stage.utils.showToast('Please enter width or height', true);
+                    return;
+                }
+                
+                this.processor.processImage('resize', {
+                    width: width,
+                    height: height,
+                    method: method,
+                    maintainAspect: maintainAspect
+                });
+            });
+            
+            // Watermark controls
+            this.watermarkOpacity.addEventListener('input', () => {
+                this.watermarkOpacityValue.textContent = this.watermarkOpacity.value;
+            });
+            
+            this.watermarkSize.addEventListener('input', () => {
+                this.watermarkSizeValue.textContent = this.watermarkSize.value;
+            });
+            
+            this.applyWatermarkBtn.addEventListener('click', () => {
+                const text = this.watermarkText.value || "Sample";
+                const color = this.watermarkColor.value;
+                const opacity = parseInt(this.watermarkOpacity.value);
+                const size = parseInt(this.watermarkSize.value);
+                const position = this.watermarkPosition.value;
+                
+                this.processor.processImage('watermark', {
+                    text: text,
+                    color: color,
+                    opacity: opacity,
+                    size: size,
+                    position: position
+                });
+            });
+            
+            // Filter controls
+            this.brightnessSlider.addEventListener('input', () => {
+                this.brightnessValue.textContent = this.brightnessSlider.value;
+            });
+            
+            this.contrastSlider.addEventListener('input', () => {
+                this.contrastValue.textContent = this.contrastSlider.value;
+            });
+            
+            this.saturationSlider.addEventListener('input', () => {
+                this.saturationValue.textContent = this.saturationSlider.value;
+            });
+            
+            this.applyFilterBtn.addEventListener('click', () => {
+                const filter = document.querySelector('input[name="filterType"]:checked').value;
+                const brightness = parseInt(this.brightnessSlider.value);
+                const contrast = parseInt(this.contrastSlider.value);
+                const saturation = parseInt(this.saturationSlider.value);
+                
+                this.processor.processImage('filter', {
+                    filter: filter,
+                    brightness: brightness,
+                    contrast: contrast,
+                    saturation: saturation
+                });
+            });
+        }
+        
+        hideAllControls() {
+            this.compressionControls.classList.remove('visible');
+            this.resizeControls.classList.remove('visible');
+            this.watermarkControls.classList.remove('visible');
+            this.filterControls.classList.remove('visible');
+        }
+    }
+    
+    class DownloadScene {
+        init(processor) {
+            this.processor = processor;
+            this.downloadBtn = document.getElementById('downloadBtn');
+            
+            this.setupEventListeners();
+        }
+        
+        setupEventListeners() {
+            this.downloadBtn.addEventListener('click', () => {
+                if (this.processor.batchFiles.length > 0) {
+                    this.processor.downloadBatch();
+                } else {
+                    this.processor.downloadCurrent();
+                }
+            });
+        }
+        
+        enableDownload() {
+            this.downloadBtn.classList.add('visible');
+        }
+    }
+    
+    class BatchScene {
+        init(processor) {
+            this.processor = processor;
+            this.batchList = document.getElementById('batchList');
+            this.batchClearBtn = document.getElementById('batchClearBtn');
+            this.batchProcessBtn = document.getElementById('batchProcessBtn');
+            
+            this.setupEventListeners();
+        }
+        
+        setupEventListeners() {
+            this.batchClearBtn.addEventListener('click', () => {
+                this.processor.clearBatch();
+            });
+            
+            this.batchProcessBtn.addEventListener('click', () => {
+                if (this.processor.batchFiles.length === 0) return;
+                
+                // Get the current operation (from the last clicked operation button)
+                const activeOperation = document.querySelector('.operation-btn.active');
+                if (!activeOperation) {
+                    this.processor.stage.utils.showToast('Please select an operation first', true);
+                    return;
+                }
+                
+                const operation = activeOperation.dataset.operation;
+                
+                // Get options based on operation
+                let options = {};
+                if (operation === 'compress') {
+                    options = {
+                        quality: parseInt(document.getElementById('compressionSlider').value),
+                        method: document.querySelector('input[name="compressionMethod"]:checked').value
+                    };
+                } else if (operation === 'resize') {
+                    options = {
+                        width: document.getElementById('resizeWidth').value ? parseInt(document.getElementById('resizeWidth').value) : null,
+                        height: document.getElementById('resizeHeight').value ? parseInt(document.getElementById('resizeHeight').value) : null,
+                        method: document.getElementById('resizeMethod').value,
+                        maintainAspect: document.getElementById('maintainAspect').checked
+                    };
+                }
+                
+                this.processor.processBatch(operation, options);
+            });
+        }
+        
+        updateBatchList() {
+            this.batchList.innerHTML = '';
+            
+            this.processor.batchFiles.forEach((file, index) => {
+                const item = document.createElement('div');
+                item.className = 'batch-item';
+                
+                // Create thumbnail
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const thumb = document.createElement('img');
+                    thumb.className = 'batch-item-thumb';
+                    thumb.src = e.target.result;
+                    
+                    item.innerHTML = `
+                        <div class="batch-item-info">
+                            <img class="batch-item-thumb" src="${e.target.result}">
+                            <div>
+                                <div class="batch-item-name">${file.file.name}</div>
+                                <div class="batch-item-size">${this.formatFileSize(file.file.size)}</div>
+                            </div>
+                        </div>
+                        <button class="batch-item-remove" data-index="${index}">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    `;
+                    
+                    // Add event listener to remove button
+                    item.querySelector('.batch-item-remove').addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        this.processor.batchFiles.splice(index, 1);
+                        this.updateBatchList();
+                        
+                        if (index === 0 && this.processor.batchFiles.length > 0) {
+                            // If we removed the first item, set the new first item as current
+                            this.processor.setCurrentFile(this.processor.batchFiles[0].file);
+                        } else if (this.processor.batchFiles.length === 0) {
+                            // No more items in batch
+                            document.getElementById('batchContainer').classList.remove('visible');
+                        }
+                    });
+                    
+                    // Click to set as current file
+                    item.addEventListener('click', () => {
+                        this.processor.setCurrentFile(file.file);
+                    });
+                };
+                
+                reader.readAsDataURL(file.file);
+                
+                this.batchList.appendChild(item);
+            });
+        }
+        
+        formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+    }
+    
+    class AppUtils {
+        init(processor) {
+            this.processor = processor;
+            this.toast = document.getElementById('toast');
+            this.toastClose = this.toast.querySelector('.toast-close');
+            this.toastProgress = document.getElementById('toastProgress');
+            
+            this.setupEventListeners();
+        }
+        
+        setupEventListeners() {
+            this.toastClose.addEventListener('click', () => {
+                this.hideToast();
+            });
+        }
+        
+        showToast(message, isError = false, type = '') {
+            const toast = this.toast;
+            const toastMessage = toast.querySelector('.toast-message');
+            const toastIcon = toast.querySelector('.toast-icon i');
+            
+            toastMessage.textContent = message;
+            
+            // Reset classes
+            toast.className = 'toast';
+            
+            // Set type
+            if (type) {
+                toast.classList.add(type);
+            } else if (isError) {
+                toast.classList.add('error');
+            } else {
+                toast.classList.add('success');
+            }
+            
+            // Set icon
+            if (isError) {
+                toastIcon.className = 'fas fa-exclamation-circle';
+            } else if (type === 'info') {
+                toastIcon.className = 'fas fa-info-circle';
+            } else if (type === 'warning') {
+                toastIcon.className = 'fas fa-exclamation-triangle';
+            } else {
+                toastIcon.className = 'fas fa-check-circle';
+            }
+            
+            // Show toast
+            toast.classList.add('visible');
+            this.toastProgress.style.width = '100%';
+            
+            // Auto-hide after delay
+            setTimeout(() => {
+                this.hideToast();
+            }, 5000);
+        }
+        
+        hideToast() {
+            this.toastProgress.style.width = '0%';
+            setTimeout(() => {
+                this.toast.classList.remove('visible');
+            }, 300);
+        }
+    }
+    
+    // Initialize the application
+    document.addEventListener('DOMContentLoaded', () => {
+        const photoProcessor = new PhotoProcessor();
+        photoProcessor.init();
+    });
+</script>
+</body>
+</html>
