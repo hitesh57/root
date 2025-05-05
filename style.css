@@ -1,3 +1,13 @@
+.operation-name {
+    margin-top: -12px;
+    width: 112%;
+    background-color: #009587; /* Light gray background */
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+  }
 .zoom-text {
     font-size: 18px;
     font-weight: bold;
@@ -102,7 +112,7 @@ box-shadow: 0 10px 10px darken(#F0F4FF, 20%)
             --info-color: #560bad;
             --border-radius: 16px;
             --border-radius-sm: 8px;
-            --box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             --box-shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.15);
             --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
             --transition-fast: all 0.2s ease-out;
@@ -489,16 +499,16 @@ box-shadow: 0 10px 10px darken(#F0F4FF, 20%)
             background-color: white;
             border-radius: var(--border-radius);
             padding: clamp(1.25rem, 3vw, 2rem);
-            box-shadow: var(--box-shadow);
+            /* box-shadow: var(--box-shadow); */
             transition: var(--transition);
             border: 1px solid var(--gray-light);
         }
 
-        .operations-container:hover {
+        /* .operations-container:hover {
             transform: translateY(-5px);
             box-shadow: var(--box-shadow-lg);
             border-color: var(--accent-color);
-        }
+        } */
 
         .operations-title {
             color: var(--primary-dark);
@@ -522,6 +532,7 @@ box-shadow: 0 10px 10px darken(#F0F4FF, 20%)
         }
 
         .operation-btn {
+        
             background-color: white;
             border: 1px solid var(--gray-light);
             padding: clamp(1rem, 2vw, 1.5rem) clamp(0.75rem, 1.5vw, 1rem);
@@ -575,7 +586,7 @@ box-shadow: 0 10px 10px darken(#F0F4FF, 20%)
 
         .operation-name {
             font-weight: 700;
-            color: var(--dark-color);
+            color: #ffffff;
             font-size: clamp(1rem, 2vw, 1.1rem);
             transition: var(--transition-fast);
         }
@@ -1108,11 +1119,13 @@ box-shadow: 0 10px 10px darken(#F0F4FF, 20%)
             }
             
             .operation-icon {
+                margin-top: -16px;
+                width: 125%;
                 font-size: clamp(1.5rem, 3vw, 1.8rem);
             }
             
             .operation-name {
-                font-size: clamp(0.9rem, 1.8vw, 1rem);
+                font-size: 20px;
             }
             
             .operation-desc {
